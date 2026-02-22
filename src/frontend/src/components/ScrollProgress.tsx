@@ -19,7 +19,7 @@ const ScrollProgress = () => {
 
   return (
     <div
-      className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-teal-500 to-emerald-500 origin-left z-50 transition-transform duration-150"
+      className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-figma-500 via-coral-500 to-tangerine-500 origin-left z-50 transition-transform duration-150"
       style={{ transform: `scaleX(${scrollProgress / 100})` }}
     />
   );

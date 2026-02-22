@@ -37,7 +37,7 @@ const ScrollToTop = () => {
           <Button
             onClick={scrollToTop}
             size="icon"
-            className="w-12 h-12 rounded-full bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-600 hover:to-emerald-600 text-white shadow-lg hover:shadow-teal-500/50 transition-all duration-300 hover:scale-110"
+            className="w-12 h-12 rounded-full bg-gradient-to-r from-figma-500 to-coral-500 hover:from-figma-600 hover:to-coral-600 text-white shadow-lg hover:shadow-figma-500/50 transition-all duration-300 hover:scale-110"
             aria-label="Scroll to top"
           >
             <ArrowUp className="h-6 w-6" />

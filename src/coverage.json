@@ -1,220 +1,98 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-22T06:35:09.223Z",
+  "generatedAt": "2026-02-22T06:50:53.375Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
   },
   "requirements": {
-    "total": 10,
-    "implemented": 10,
+    "total": 4,
+    "implemented": 3,
     "items": [
       {
-        "id": "REQ-12",
-        "summary": "Replace all existing scroll animations with Framer Motion-based advanced animations including staggered children, spring physics, parallax effects, and micro-interactions throughout all sections (Hero, About, Experience, Projects, Skills, Contact)",
+        "id": "REQ-22",
+        "summary": "Replace the current teal/emerald color scheme with a new design-focused color palette that reflects UI/UX design principles and creative work, using colors appropriate for a design portfolio (avoid generic blue/purple unless contextually relevant to design tools)",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/package.json",
-          "frontend/src/components/Hero.tsx",
-          "frontend/src/components/About.tsx",
-          "frontend/src/components/Experience.tsx",
-          "frontend/src/components/Projects.tsx",
-          "frontend/src/components/Skills.tsx",
-          "frontend/src/components/Contact.tsx",
-          "frontend/src/hooks/useFramerAnimations.ts"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/Hero.tsx",
-          "frontend/src/components/About.tsx",
-          "frontend/src/components/Experience.tsx",
-          "frontend/src/components/Projects.tsx",
-          "frontend/src/components/Skills.tsx",
-          "frontend/src/components/Contact.tsx",
-          "frontend/src/hooks/useFramerAnimations.ts"
-        ]
-      },
-      {
-        "id": "REQ-13",
-        "summary": "Implement Mobbin.com-style glassmorphism cards with backdrop blur, subtle borders, and gradient overlays for all content sections (About cards, Experience timeline, Project cards, Skills grid, Contact form)",
-        "status": "implemented",
-        "plannedFiles": [
+          "frontend/tailwind.config.js",
           "frontend/src/index.css",
+          "frontend/src/components/Hero.tsx",
           "frontend/src/components/About.tsx",
           "frontend/src/components/Experience.tsx",
           "frontend/src/components/Projects.tsx",
           "frontend/src/components/Skills.tsx",
-          "frontend/src/components/Contact.tsx"
+          "frontend/src/components/Contact.tsx",
+          "frontend/src/components/ScrollProgress.tsx",
+          "frontend/src/components/ScrollToTop.tsx"
         ],
         "matchedFiles": [
+          "frontend/tailwind.config.js",
           "frontend/src/index.css",
+          "frontend/src/components/Hero.tsx",
           "frontend/src/components/About.tsx",
           "frontend/src/components/Experience.tsx",
           "frontend/src/components/Projects.tsx",
           "frontend/src/components/Skills.tsx",
-          "frontend/src/components/Contact.tsx"
-        ]
-      },
-      {
-        "id": "REQ-14",
-        "summary": "Add UI/UX developer-themed interactive micro-interactions including magnetic cursor effects on buttons, morphing shapes on hover, ripple effects on clicks, and smooth page transitions between sections",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/hooks/useMagneticEffect.ts",
-          "frontend/src/hooks/useRippleEffect.ts",
-          "frontend/src/components/Hero.tsx",
           "frontend/src/components/Contact.tsx",
-          "frontend/src/components/Navbar.tsx",
-          "frontend/src/App.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/Hero.tsx",
-          "frontend/src/components/Contact.tsx",
-          "frontend/src/components/Navbar.tsx",
-          "frontend/src/App.tsx"
-        ]
-      },
-      {
-        "id": "REQ-15",
-        "summary": "Enhance Hero section with animated gradient text that shifts colors, floating UI element mockups (wireframes, design tools icons) with parallax depth, and particle effects in the background",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/Hero.tsx",
-          "frontend/src/hooks/useMouseParallax.ts",
-          "frontend/src/components/ParticleBackground.tsx",
-          "frontend/src/index.css"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/Hero.tsx",
-          "frontend/src/hooks/useMouseParallax.ts",
-          "frontend/src/components/ParticleBackground.tsx",
-          "frontend/src/index.css"
-        ]
-      },
-      {
-        "id": "REQ-16",
-        "summary": "Add reveal-on-scroll animations with mask effects, where content appears through animated masks (wipes, circles, splits) as user scrolls through each section",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/hooks/useScrollMask.ts",
-          "frontend/src/components/About.tsx",
-          "frontend/src/components/Experience.tsx",
-          "frontend/src/components/Projects.tsx",
-          "frontend/src/components/Skills.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/About.tsx",
-          "frontend/src/components/Experience.tsx",
-          "frontend/src/components/Projects.tsx",
-          "frontend/src/components/Skills.tsx"
-        ]
-      },
-      {
-        "id": "REQ-17",
-        "summary": "Implement premium hover effects on Project cards including 3D tilt on mouse movement, inner spotlight that follows cursor, and smooth scale transformations with glow effects",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/hooks/use3DTilt.ts",
-          "frontend/src/hooks/useSpotlight.ts",
-          "frontend/src/components/Projects.tsx",
-          "frontend/src/index.css"
-        ],
-        "matchedFiles": [
-          "frontend/src/hooks/use3DTilt.ts",
-          "frontend/src/hooks/useSpotlight.ts",
-          "frontend/src/components/Projects.tsx",
-          "frontend/src/index.css"
-        ]
-      },
-      {
-        "id": "REQ-18",
-        "summary": "Add animated background grid or mesh gradient that subtly morphs and shifts colors throughout the page, creating depth and visual interest without distracting from content",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/AnimatedBackground.tsx",
-          "frontend/src/App.tsx",
-          "frontend/src/index.css"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/AnimatedBackground.tsx",
-          "frontend/src/App.tsx",
-          "frontend/src/index.css"
-        ]
-      },
-      {
-        "id": "REQ-19",
-        "summary": "Enhance Skills bento grid with advanced card interactions including magnetic hover effects between adjacent cards, staggered flip animations on scroll reveal, and subtle pulsing glows on skill icons",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/Skills.tsx",
-          "frontend/src/hooks/useMagneticGrid.ts",
-          "frontend/src/index.css"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/Skills.tsx",
-          "frontend/src/index.css"
-        ]
-      },
-      {
-        "id": "REQ-20",
-        "summary": "Add smooth page transition overlay with animated logo or loading state when navigating between major sections, creating seamless flow",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/PageTransition.tsx",
-          "frontend/src/App.tsx",
-          "frontend/src/components/Navbar.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/App.tsx",
-          "frontend/src/components/Navbar.tsx"
-        ]
-      },
-      {
-        "id": "REQ-21",
-        "summary": "Implement scroll-linked animations where elements transform based on scroll position, including progress bars, timeline connections that draw in, and elements that morph as they enter viewport",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/hooks/useScrollProgress.ts",
           "frontend/src/components/ScrollProgress.tsx",
-          "frontend/src/components/Experience.tsx",
-          "frontend/src/App.tsx",
-          "frontend/src/hooks/useScrollVelocity.ts"
+          "frontend/src/components/ScrollToTop.tsx"
+        ]
+      },
+      {
+        "id": "REQ-23",
+        "summary": "Update the AnimatedBackground component with a new background design that aligns with the design-focused theme, replacing the current grid pattern with design-related visual elements or patterns",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/AnimatedBackground.tsx"
         ],
         "matchedFiles": [
-          "frontend/src/hooks/useScrollProgress.ts",
-          "frontend/src/components/ScrollProgress.tsx",
-          "frontend/src/components/Experience.tsx",
-          "frontend/src/App.tsx"
+          "frontend/src/components/AnimatedBackground.tsx"
         ]
+      },
+      {
+        "id": "REQ-24",
+        "summary": "Update all glassmorphism card effects, gradients, and overlays to use the new design-focused color palette consistently across all sections (Hero, About, Experience, Projects, Skills, Contact)",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Navbar.tsx",
+          "frontend/src/components/ParticleBackground.tsx",
+          "frontend/src/components/Footer.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Navbar.tsx",
+          "frontend/src/components/Footer.tsx"
+        ]
+      },
+      {
+        "id": "REQ-25",
+        "summary": "Update the Tailwind CSS configuration and global CSS variables in frontend/index.css and frontend/src/index.css to define and apply the new design-focused color scheme using OKLCH color space",
+        "status": "missing",
+        "plannedFiles": [
+          "frontend/index.css"
+        ],
+        "matchedFiles": []
       }
     ]
   },
   "changedFiles": [
     "build-request.json",
-    "build-template/README.md",
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/public/assets/generated/design-grid.dim_800x800.png",
-    "frontend/public/assets/generated/figma-icon.dim_120x120.png",
-    "frontend/public/assets/generated/wireframe-float.dim_400x400.png",
-    "frontend/src/App.tsx",
     "frontend/src/components/About.tsx",
     "frontend/src/components/AnimatedBackground.tsx",
     "frontend/src/components/Contact.tsx",
     "frontend/src/components/Experience.tsx",
+    "frontend/src/components/Footer.tsx",
     "frontend/src/components/Hero.tsx",
     "frontend/src/components/Navbar.tsx",
-    "frontend/src/components/ParticleBackground.tsx",
     "frontend/src/components/Projects.tsx",
     "frontend/src/components/ScrollProgress.tsx",
+    "frontend/src/components/ScrollToTop.tsx",
     "frontend/src/components/Skills.tsx",
-    "frontend/src/hooks/use3DTilt.ts",
-    "frontend/src/hooks/useFramerAnimations.ts",
-    "frontend/src/hooks/useMouseParallax.ts",
-    "frontend/src/hooks/useScrollProgress.ts",
-    "frontend/src/hooks/useSpotlight.ts",
     "frontend/src/index.css",
+    "frontend/tailwind.config.js",
     "project_state.json",
     "scratch/component-selection.json",
     "spec.md",

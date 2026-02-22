@@ -2,202 +2,19 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-replace-all-existing-scroll-animations-with-framer-motion-based-advanced-animations-including-staggered-children-spring-physics-parallax-effects-and-micro-interactions-throughout-all-sections-hero-about-experience-projects-skills-contact",
-      "featureTitle": "Replace all existing scroll animations with Framer Motion-based advanced animations including staggered children, spring physics, parallax effects, and micro-interactions throughout all sections (Hero, About, Experience, Projects, Skills, Contact)",
+      "featureId": "feature-replace-the-current-teal-emerald-color-scheme-with-a-new-design-focused-color-palette-that-reflects-ui-ux-design-principles-and-creative-work-using-colors-appropriate-for-a-design-portfolio-avoid-generic-blue-purple-unless-contextually-relevant-to-design-tools",
+      "featureTitle": "Replace the current teal/emerald color scheme with a new design-focused color palette that reflects UI/UX design principles and creative work, using colors appropriate for a design portfolio (avoid generic blue/purple unless contextually relevant to design tools)",
       "files": [
         "frontend/src/components/About.tsx",
         "frontend/src/components/Contact.tsx",
         "frontend/src/components/Experience.tsx",
         "frontend/src/components/Hero.tsx",
         "frontend/src/components/Projects.tsx",
-        "frontend/src/components/Skills.tsx",
-        "frontend/src/hooks/useFramerAnimations.ts"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-12"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-implement-mobbin-com-style-glassmorphism-cards-with-backdrop-blur-subtle-borders-and-gradient-overlays-for-all-content-sections-about-cards-experience-timeline-project-cards-skills-grid-contact-form",
-      "featureTitle": "Implement Mobbin.com-style glassmorphism cards with backdrop blur, subtle borders, and gradient overlays for all content sections (About cards, Experience timeline, Project cards, Skills grid, Contact form)",
-      "files": [
-        "frontend/src/components/About.tsx",
-        "frontend/src/components/Contact.tsx",
-        "frontend/src/components/Experience.tsx",
-        "frontend/src/components/Projects.tsx",
-        "frontend/src/components/Skills.tsx",
-        "frontend/src/index.css"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-13"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-add-ui-ux-developer-themed-interactive-micro-interactions-including-magnetic-cursor-effects-on-buttons-morphing-shapes-on-hover-ripple-effects-on-clicks-and-smooth-page-transitions-between-sections",
-      "featureTitle": "Add UI/UX developer-themed interactive micro-interactions including magnetic cursor effects on buttons, morphing shapes on hover, ripple effects on clicks, and smooth page transitions between sections",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/Contact.tsx",
-        "frontend/src/components/Hero.tsx",
-        "frontend/src/components/Navbar.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-14"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-enhance-hero-section-with-animated-gradient-text-that-shifts-colors-floating-ui-element-mockups-wireframes-design-tools-icons-with-parallax-depth-and-particle-effects-in-the-background",
-      "featureTitle": "Enhance Hero section with animated gradient text that shifts colors, floating UI element mockups (wireframes, design tools icons) with parallax depth, and particle effects in the background",
-      "files": [
-        "frontend/src/components/Hero.tsx",
-        "frontend/src/components/ParticleBackground.tsx",
-        "frontend/src/hooks/useMouseParallax.ts",
-        "frontend/src/index.css"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-15"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-add-reveal-on-scroll-animations-with-mask-effects-where-content-appears-through-animated-masks-wipes-circles-splits-as-user-scrolls-through-each-section",
-      "featureTitle": "Add reveal-on-scroll animations with mask effects, where content appears through animated masks (wipes, circles, splits) as user scrolls through each section",
-      "files": [
-        "frontend/src/components/About.tsx",
-        "frontend/src/components/Experience.tsx",
-        "frontend/src/components/Projects.tsx",
-        "frontend/src/components/Skills.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-16"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-implement-premium-hover-effects-on-project-cards-including-3d-tilt-on-mouse-movement-inner-spotlight-that-follows-cursor-and-smooth-scale-transformations-with-glow-effects",
-      "featureTitle": "Implement premium hover effects on Project cards including 3D tilt on mouse movement, inner spotlight that follows cursor, and smooth scale transformations with glow effects",
-      "files": [
-        "frontend/src/components/Projects.tsx",
-        "frontend/src/hooks/use3DTilt.ts",
-        "frontend/src/hooks/useSpotlight.ts",
-        "frontend/src/index.css"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-17"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-add-animated-background-grid-or-mesh-gradient-that-subtly-morphs-and-shifts-colors-throughout-the-page-creating-depth-and-visual-interest-without-distracting-from-content",
-      "featureTitle": "Add animated background grid or mesh gradient that subtly morphs and shifts colors throughout the page, creating depth and visual interest without distracting from content",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/AnimatedBackground.tsx",
-        "frontend/src/index.css"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-18"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-enhance-skills-bento-grid-with-advanced-card-interactions-including-magnetic-hover-effects-between-adjacent-cards-staggered-flip-animations-on-scroll-reveal-and-subtle-pulsing-glows-on-skill-icons",
-      "featureTitle": "Enhance Skills bento grid with advanced card interactions including magnetic hover effects between adjacent cards, staggered flip animations on scroll reveal, and subtle pulsing glows on skill icons",
-      "files": [
-        "frontend/src/components/Skills.tsx",
-        "frontend/src/index.css"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-19"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-add-smooth-page-transition-overlay-with-animated-logo-or-loading-state-when-navigating-between-major-sections-creating-seamless-flow",
-      "featureTitle": "Add smooth page transition overlay with animated logo or loading state when navigating between major sections, creating seamless flow",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/Navbar.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-20"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-implement-scroll-linked-animations-where-elements-transform-based-on-scroll-position-including-progress-bars-timeline-connections-that-draw-in-and-elements-that-morph-as-they-enter-viewport",
-      "featureTitle": "Implement scroll-linked animations where elements transform based on scroll position, including progress bars, timeline connections that draw in, and elements that morph as they enter viewport",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/Experience.tsx",
         "frontend/src/components/ScrollProgress.tsx",
-        "frontend/src/hooks/useScrollProgress.ts"
+        "frontend/src/components/ScrollToTop.tsx",
+        "frontend/src/components/Skills.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -207,7 +24,44 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-21"
+        "REQ-22"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-animatedbackground-component-with-a-new-background-design-that-aligns-with-the-design-focused-theme-replacing-the-current-grid-pattern-with-design-related-visual-elements-or-patterns",
+      "featureTitle": "Update the AnimatedBackground component with a new background design that aligns with the design-focused theme, replacing the current grid pattern with design-related visual elements or patterns",
+      "files": [
+        "frontend/src/components/AnimatedBackground.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-23"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-all-glassmorphism-card-effects-gradients-and-overlays-to-use-the-new-design-focused-color-palette-consistently-across-all-sections-hero-about-experience-projects-skills-contact",
+      "featureTitle": "Update all glassmorphism card effects, gradients, and overlays to use the new design-focused color palette consistently across all sections (Hero, About, Experience, Projects, Skills, Contact)",
+      "files": [
+        "frontend/src/components/Footer.tsx",
+        "frontend/src/components/Navbar.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-24"
       ],
       "confidence": "high"
     }

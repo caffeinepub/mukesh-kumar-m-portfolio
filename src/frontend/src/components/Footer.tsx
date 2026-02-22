@@ -15,12 +15,12 @@ const Footer = () => {
           </p>
           <p className="text-muted-foreground text-sm flex items-center gap-2">
             Built with{' '}
-            <Heart className="w-4 h-4 text-teal-400 fill-teal-400 animate-pulse" /> using{' '}
+            <Heart className="w-4 h-4 text-figma-400 fill-figma-400 animate-pulse" /> using{' '}
             <a
               href={`https://caffeine.ai/?utm_source=Caffeine-footer&utm_medium=referral&utm_content=${appIdentifier}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-teal-400 hover:text-teal-300 transition-colors font-semibold"
+              className="text-figma-400 hover:text-figma-300 transition-colors font-semibold"
             >
               caffeine.ai
             </a>

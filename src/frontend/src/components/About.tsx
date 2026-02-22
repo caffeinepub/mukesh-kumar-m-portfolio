@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Target, Layers, Palette } from 'lucide-react';
+import { Sparkles, Target, Users, Zap } from 'lucide-react';
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -29,19 +29,24 @@ const About = () => {
 
   const keyPoints = [
     {
+      icon: Sparkles,
+      title: 'Creative Problem Solver',
+      description: 'Transforming complex challenges into elegant, user-friendly solutions',
+    },
+    {
       icon: Target,
-      title: 'Product Strategy',
-      description: 'Solving business problems',
+      title: 'Detail-Oriented',
+      description: 'Obsessed with pixel-perfect designs and seamless user experiences',
     },
     {
-      icon: Layers,
-      title: 'Design Systems',
-      description: 'Building modular UI kits',
+      icon: Users,
+      title: 'User-Centric',
+      description: 'Putting users first through research, testing, and iteration',
     },
     {
-      icon: Palette,
-      title: 'Visual Storytelling',
-      description: 'Creating cohesive brand voices',
+      icon: Zap,
+      title: 'Fast Learner',
+      description: 'Constantly exploring new tools, trends, and technologies',
     },
   ];
 
@@ -51,67 +56,78 @@ const About = () => {
         <div className={`max-w-6xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
-              About <span className="animated-gradient-text">& Philosophy</span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+              About <span className="animated-gradient-text">Me</span>
             </h2>
-            <p className="text-xl sm:text-2xl text-teal-400 font-semibold max-w-3xl mx-auto leading-relaxed">
-              Obsessed with finding the 'pain point' in a user's journey and fixing it with simple,
-              elegant solutions.
+            <p className="text-muted-foreground text-lg">
+              Passionate designer with a love for creating meaningful experiences
             </p>
           </div>
 
+          {/* Main Content */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16">
+            {/* Profile Image */}
+            <div
+              className={`transition-all duration-700 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}
+            >
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-figma-500/20 to-coral-500/20 rounded-2xl blur-2xl" />
+                <img
+                  src="/assets/generated/mukesh-profile.dim_400x400.png"
+                  alt="Mukesh Kumar M"
+                  className="relative rounded-2xl w-full max-w-md mx-auto shadow-2xl border border-border/50"
+                />
+              </div>
+            </div>
+
+            {/* Bio Text */}
+            <div
+              className={`transition-all duration-700 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
+              style={{ transitionDelay: '200ms' }}
+            >
+              <div className="space-y-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
+                <p>
+                  I'm a <span className="text-foreground font-semibold">UI/UX Designer</span> and{' '}
+                  <span className="text-foreground font-semibold">Frontend Developer</span> with a passion
+                  for creating beautiful, functional digital experiences.
+                </p>
+                <p>
+                  With expertise in <span className="text-figma-400 font-semibold">design systems</span>,{' '}
+                  <span className="text-coral-400 font-semibold">user research</span>, and{' '}
+                  <span className="text-tangerine-400 font-semibold">modern web technologies</span>, I bridge
+                  the gap between design and development.
+                </p>
+                <p>
+                  My approach combines data-driven insights with creative thinking to deliver solutions that
+                  not only look great but also solve real user problems.
+                </p>
+              </div>
+            </div>
+          </div>
+
           {/* Key Points Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {keyPoints.map((point, index) => (
               <div
                 key={index}
                 className={`transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
-                style={{ transitionDelay: `${index * 150}ms` }}
+                style={{ transitionDelay: `${400 + index * 150}ms` }}
               >
-                <Card className="h-full glass-card group">
-                  <CardContent className="p-6 sm:p-8 flex flex-col items-center text-center">
-                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-teal-500/20 to-emerald-500/20 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
-                      <point.icon className="w-8 h-8 text-teal-400 icon-pulse" />
+                <Card className="h-full glass-card group hover:-translate-y-2 transition-all duration-300">
+                  <CardContent className="p-6">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-figma-500/20 to-coral-500/20 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+                      <point.icon className="w-6 h-6 text-figma-400" />
                     </div>
-                    <h3 className="text-xl font-bold mb-2 text-foreground">{point.title}</h3>
-                    <p className="text-muted-foreground">{point.description}</p>
+                    <h3 className="text-lg font-bold mb-2 text-foreground group-hover:text-figma-400 transition-colors">
+                      {point.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {point.description}
+                    </p>
                   </CardContent>
                 </Card>
               </div>
             ))}
-          </div>
-
-          {/* Bio Section */}
-          <div className={`transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{ transitionDelay: '450ms' }}>
-            <Card className="glass-card">
-              <CardContent className="p-8 sm:p-12">
-                <div className="flex flex-col md:flex-row items-center gap-8">
-                  <div className="flex-shrink-0">
-                    <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-2xl overflow-hidden ring-4 ring-teal-500/20 hover:ring-teal-500/40 transition-all duration-300">
-                      <img
-                        src="/assets/generated/mukesh-profile.dim_400x400.png"
-                        alt="Mukesh Kumar M"
-                        className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
-                      />
-                    </div>
-                  </div>
-                  <div className="flex-1 text-center md:text-left">
-                    <h3 className="text-2xl sm:text-3xl font-bold mb-4">
-                      From Engineering to Experience Design
-                    </h3>
-                    <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
-                      With a <span className="text-teal-400 font-semibold">B.E. in Mechanical Engineering</span> from{' '}
-                      <span className="text-teal-400 font-semibold">PSNA College of Engineering and Technology</span>, I bring a unique analytical
-                      perspective to UI/UX design. My engineering background enables me to approach
-                      design challenges with systematic problem-solving, creating interfaces that are
-                      not only beautiful but also functionally robust and user-centric. This blend of
-                      technical understanding and creative design thinking allows me to bridge the gap
-                      between what users need and what technology can deliver.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>

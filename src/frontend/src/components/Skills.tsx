@@ -84,10 +84,10 @@ const Skills = () => {
               >
                 <Card className="h-full glass-card group hover:-translate-y-2 transition-all duration-300">
                   <CardContent className="p-6 sm:p-8">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-teal-500/20 to-emerald-500/20 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
-                      <skill.icon className="w-6 h-6 text-teal-400 icon-pulse" />
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-figma-500/20 to-coral-500/20 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+                      <skill.icon className="w-6 h-6 text-figma-400 icon-pulse" />
                     </div>
-                    <h3 className="text-xl font-bold mb-3 text-foreground group-hover:text-teal-400 transition-colors">
+                    <h3 className="text-xl font-bold mb-3 text-foreground group-hover:text-figma-400 transition-colors">
                       {skill.title}
                     </h3>
                     <ul className="space-y-2">
@@ -97,7 +97,7 @@ const Skills = () => {
                           className="text-muted-foreground text-sm sm:text-base flex items-center gap-2 animate-fade-in-up"
                           style={{ animationDelay: `${(index * 150) + (itemIndex * 100)}ms` }}
                         >
-                          <span className="w-1.5 h-1.5 rounded-full bg-teal-400" />
+                          <span className="w-1.5 h-1.5 rounded-full bg-figma-400" />
                           {item}
                         </li>
                       ))}

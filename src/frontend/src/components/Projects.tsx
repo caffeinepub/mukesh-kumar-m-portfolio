@@ -28,8 +28,9 @@ const ProjectCard = ({ project, index, isVisible }: { project: any; index: numbe
         transition: 'transform 0.1s ease-out',
       });
 
+      const figmaColor = 'rgba(168, 85, 247, 0.15)';
       setSpotlightStyle({
-        background: `radial-gradient(circle 300px at ${x}px ${y}px, oklch(0.72 0.15 180 / 0.15), transparent)`,
+        background: `radial-gradient(circle 300px at ${x}px ${y}px, ${figmaColor}, transparent)`,
       });
     };
 
@@ -70,10 +71,10 @@ const ProjectCard = ({ project, index, isVisible }: { project: any; index: numbe
 
           <CardHeader className="relative z-10">
             <div className="flex items-start justify-between mb-4">
-              <CardTitle className="text-2xl sm:text-3xl font-bold group-hover:text-teal-400 transition-colors">
+              <CardTitle className="text-2xl sm:text-3xl font-bold group-hover:text-figma-400 transition-colors">
                 {project.title}
               </CardTitle>
-              <ExternalLink className="w-6 h-6 text-teal-400 flex-shrink-0 group-hover:scale-125 group-hover:rotate-45 transition-all duration-300" />
+              <ExternalLink className="w-6 h-6 text-figma-400 flex-shrink-0 group-hover:scale-125 group-hover:rotate-45 transition-all duration-300" />
             </div>
             <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
               {project.description}
@@ -86,7 +87,7 @@ const ProjectCard = ({ project, index, isVisible }: { project: any; index: numbe
                 <Badge
                   key={tagIndex}
                   variant="secondary"
-                  className="bg-teal-500/10 text-teal-400 border border-teal-500/20 hover:bg-teal-500/20 hover:scale-110 transition-all duration-300"
+                  className="bg-figma-500/10 text-figma-400 border border-figma-500/20 hover:bg-figma-500/20 hover:scale-110 transition-all duration-300"
                 >
                   {tag}
                 </Badge>
@@ -96,7 +97,7 @@ const ProjectCard = ({ project, index, isVisible }: { project: any; index: numbe
 
           {/* Glow Effect */}
           <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-            <div className="absolute inset-0 bg-gradient-to-br from-teal-500/20 to-emerald-500/20 blur-xl" />
+            <div className="absolute inset-0 bg-gradient-to-br from-figma-500/20 to-coral-500/20 blur-xl" />
           </div>
         </Card>
       </div>
@@ -135,14 +136,14 @@ const Projects = () => {
       description:
         'Streamlined clinical workflows with persona-driven interfaces and a scalable design system.',
       tags: ['Dashboard Design', 'Healthcare UX', 'Data Visualization'],
-      gradient: 'from-teal-500/20 to-cyan-500/20',
+      gradient: 'from-figma-500/20 to-coral-500/20',
     },
     {
       title: 'Tours and Travel Management System',
       description:
         'End-to-end travel platform with seamless booking, interactive itineraries, and a responsive engine.',
       tags: ['Booking Engine', 'Consumer App', 'Travel Tech'],
-      gradient: 'from-emerald-500/20 to-green-500/20',
+      gradient: 'from-coral-500/20 to-tangerine-500/20',
     },
   ];
 

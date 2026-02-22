@@ -79,8 +79,8 @@ const Hero = () => {
 
       {/* Floating Gradient Orbs */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 sm:w-96 sm:h-96 bg-teal-500/20 rounded-full blur-3xl animate-pulse-slow" />
-        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 sm:w-96 sm:h-96 bg-emerald-500/20 rounded-full blur-3xl animate-pulse-slower" />
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 sm:w-96 sm:h-96 bg-figma-500/20 rounded-full blur-3xl animate-pulse-slow" />
+        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 sm:w-96 sm:h-96 bg-coral-500/20 rounded-full blur-3xl animate-pulse-slower" />
       </div>
 
       {/* Content */}
@@ -88,55 +88,61 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+              Hi, I'm{' '}
               <span className="animated-gradient-text">
-                Designing Human-Centered
+                Mukesh Kumar M
               </span>
-              <br />
-              <span className="text-foreground">Digital Experiences</span>
             </h1>
           </div>
 
-          <p
-            className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in-up"
-            style={{ animationDelay: '0.4s' }}
-          >
-            I am <span className="text-teal-400 font-semibold">Mukesh Kumar M</span>, a UI/UX
-            Developer based in Chennai bridging the gap between psychology, design, and business
-            strategy.
-          </p>
+          <div className="animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+            <p className="text-xl sm:text-2xl md:text-3xl text-muted-foreground mb-8 font-medium">
+              UI/UX Designer & Frontend Developer
+            </p>
+          </div>
+
+          <div className="animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
+              Crafting intuitive digital experiences that blend aesthetics with functionality.
+              Passionate about design systems, user research, and pixel-perfect interfaces.
+            </p>
+          </div>
 
           <div
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up"
-            style={{ animationDelay: '0.6s' }}
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up"
+            style={{ animationDelay: '0.8s' }}
           >
             <Button
               size="lg"
               onClick={() => scrollToSection('projects')}
-              className="magnetic-button bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-600 hover:to-emerald-600 text-white px-8 py-6 text-base sm:text-lg rounded-xl shadow-lg hover:shadow-teal-500/50 transition-all duration-300 group hover:scale-105 active:scale-95"
+              className="bg-gradient-to-r from-figma-500 to-coral-500 hover:from-figma-600 hover:to-coral-600 text-white shadow-lg hover:shadow-figma-500/50 transition-all duration-300 hover:scale-105 active:scale-95 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6"
             >
-              View Projects
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              View My Work
+              <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button
               size="lg"
               variant="outline"
               onClick={() => scrollToSection('contact')}
-              className="border-2 border-teal-500/50 hover:border-teal-500 hover:bg-teal-500/10 px-8 py-6 text-base sm:text-lg rounded-xl transition-all duration-300 group hover:scale-105 active:scale-95"
+              className="border-2 border-figma-500/50 hover:bg-figma-500/10 hover:border-figma-500 transition-all duration-300 hover:scale-105 active:scale-95 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6"
             >
-              <Mail className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+              <Mail className="mr-2 h-5 w-5" />
               Contact Me
             </Button>
           </div>
-        </div>
-      </div>
 
-      {/* Scroll Indicator */}
-      <div
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-fade-in"
-        style={{ animationDelay: '1.2s' }}
-      >
-        <div className="w-6 h-10 border-2 border-teal-500/50 rounded-full flex items-start justify-center p-2 animate-bounce-slow">
-          <div className="w-1.5 h-1.5 bg-teal-400 rounded-full animate-scroll-indicator" />
+          {/* Scroll Indicator */}
+          <div
+            className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-fade-in"
+            style={{ animationDelay: '1s' }}
+          >
+            <div className="flex flex-col items-center gap-2">
+              <span className="text-sm text-muted-foreground">Scroll to explore</span>
+              <div className="w-6 h-10 border-2 border-figma-500/50 rounded-full flex items-start justify-center p-2">
+                <div className="w-1.5 h-3 bg-figma-500 rounded-full animate-scroll-indicator" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

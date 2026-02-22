@@ -66,15 +66,20 @@ export default {
                     border: 'oklch(var(--sidebar-border))',
                     ring: 'oklch(var(--sidebar-ring))'
                 },
-                teal: {
-                    400: 'oklch(0.72 0.15 180)',
-                    500: 'oklch(0.65 0.15 180)',
-                    600: 'oklch(0.58 0.15 180)',
+                figma: {
+                    400: 'oklch(0.68 0.25 300)',
+                    500: 'oklch(0.65 0.25 300)',
+                    600: 'oklch(0.58 0.25 300)',
                 },
-                emerald: {
-                    400: 'oklch(0.75 0.16 165)',
-                    500: 'oklch(0.68 0.16 165)',
-                    600: 'oklch(0.61 0.16 165)',
+                coral: {
+                    400: 'oklch(0.73 0.20 15)',
+                    500: 'oklch(0.70 0.20 15)',
+                    600: 'oklch(0.63 0.20 15)',
+                },
+                tangerine: {
+                    400: 'oklch(0.75 0.18 45)',
+                    500: 'oklch(0.72 0.18 45)',
+                    600: 'oklch(0.65 0.18 45)',
                 }
             },
             borderRadius: {

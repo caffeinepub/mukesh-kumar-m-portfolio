@@ -1,370 +1,128 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Transform portfolio into Mobbin-inspired UI with premium animations",
+  "title": "Update background and theme with design-focused color scheme",
   "requirements": [
     {
-      "id": "REQ-12",
-      "summary": "Replace all existing scroll animations with Framer Motion-based advanced animations including staggered children, spring physics, parallax effects, and micro-interactions throughout all sections",
+      "id": "REQ-22",
+      "summary": "Replace teal/emerald color scheme with design-focused palette reflecting UI/UX design principles",
       "acceptanceCriteria": [
-        "All sections use Framer Motion instead of Intersection Observer for animations",
-        "Staggered animations apply to card grids and list items with spring physics",
-        "Smooth entrance animations with fade, slide, and scale combinations",
-        "Parallax scrolling effects on background elements",
-        "Animation timing and easing curves match premium UI standards"
+        "New color scheme is applied throughout the portfolio (buttons, accents, gradients, borders)",
+        "Colors reflect design industry aesthetics (e.g., design tool brand colors, creative industry palettes)",
+        "Color scheme maintains WCAG accessibility compliance",
+        "Theme is distinct from the previous teal/emerald palette"
       ],
       "file_operations": [
         {
-          "path": "frontend/package.json",
+          "path": "frontend/tailwind.config.js",
           "operation": "modify",
-          "description": "Add framer-motion dependency to enable advanced animation capabilities throughout the application"
-        },
-        {
-          "path": "frontend/src/components/Hero.tsx",
-          "operation": "modify",
-          "description": "Replace existing animations with Framer Motion motion components, add spring physics to CTA buttons, implement parallax effects on gradient orbs, and add staggered entrance animations for text elements"
-        },
-        {
-          "path": "frontend/src/components/About.tsx",
-          "operation": "modify",
-          "description": "Remove Intersection Observer logic and replace with Framer Motion's motion.div with viewport detection, add staggered animations to the three key point cards using spring physics, and implement smooth fade-slide combinations for profile image and bio text"
-        },
-        {
-          "path": "frontend/src/components/Experience.tsx",
-          "operation": "modify",
-          "description": "Replace Intersection Observer with Framer Motion viewport animations, add staggered entrance animations to achievement bullet points with spring physics, and implement smooth slide-in effect for timeline elements"
-        },
-        {
-          "path": "frontend/src/components/Projects.tsx",
-          "operation": "modify",
-          "description": "Remove Intersection Observer and implement Framer Motion viewport animations, add staggered grid animations for project cards with spring physics, and create smooth entrance animations combining fade, slide, and subtle scale effects"
-        },
-        {
-          "path": "frontend/src/components/Skills.tsx",
-          "operation": "modify",
-          "description": "Replace Intersection Observer with Framer Motion animations, implement staggered bento grid reveal with spring physics, add parallax effects to individual skill cards, and create micro-interactions for hover states"
-        },
-        {
-          "path": "frontend/src/components/Contact.tsx",
-          "operation": "modify",
-          "description": "Remove Intersection Observer and add Framer Motion viewport animations, implement staggered entrance for contact cards and form fields with spring physics, and add smooth fade-slide animations for all elements"
-        },
-        {
-          "path": "frontend/src/hooks/useFramerAnimations.ts",
-          "operation": "create",
-          "description": "Create reusable Framer Motion animation variants including fadeInUp, slideInLeft, slideInRight, staggerContainer, staggerItem with spring physics configurations, and parallax scroll effects that can be imported across all components"
-        }
-      ]
-    },
-    {
-      "id": "REQ-13",
-      "summary": "Implement Mobbin.com-style glassmorphism cards with backdrop blur, subtle borders, and gradient overlays for all content sections",
-      "acceptanceCriteria": [
-        "Cards feature backdrop-filter blur with semi-transparent backgrounds",
-        "Subtle gradient borders using CSS gradients",
-        "Hover states with smooth glass panel effects and glow",
-        "Consistent glassmorphism aesthetic across all card components",
-        "Visual hierarchy maintained with varying opacity levels"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/index.css",
-          "operation": "modify",
-          "description": "Add glassmorphism utility classes including backdrop-blur configurations, semi-transparent background utilities with varying opacity levels, gradient border utilities, and glow effect classes for consistent application across all card components"
-        },
-        {
-          "path": "frontend/src/components/About.tsx",
-          "operation": "modify",
-          "description": "Apply glassmorphism styling to the three key point cards with backdrop-blur, semi-transparent backgrounds, subtle gradient borders, and hover states that enhance the glass panel effect with glow"
-        },
-        {
-          "path": "frontend/src/components/Experience.tsx",
-          "operation": "modify",
-          "description": "Apply glassmorphism effect to the timeline container and achievement cards with backdrop-blur, gradient borders, and varying opacity levels to create visual hierarchy"
-        },
-        {
-          "path": "frontend/src/components/Projects.tsx",
-          "operation": "modify",
-          "description": "Transform project cards with glassmorphism styling including backdrop-blur, semi-transparent backgrounds, gradient borders, and enhanced hover states with glass panel glow effects"
-        },
-        {
-          "path": "frontend/src/components/Skills.tsx",
-          "operation": "modify",
-          "description": "Apply glassmorphism to skill category cards in the bento grid with backdrop-blur, subtle gradient borders, varying opacity levels for hierarchy, and hover states with glow effects"
-        },
-        {
-          "path": "frontend/src/components/Contact.tsx",
-          "operation": "modify",
-          "description": "Add glassmorphism styling to contact information cards and form container with backdrop-blur, semi-transparent backgrounds, gradient borders, and smooth glass panel hover effects"
-        }
-      ]
-    },
-    {
-      "id": "REQ-14",
-      "summary": "Add UI/UX developer-themed interactive micro-interactions including magnetic cursor effects on buttons, morphing shapes on hover, ripple effects on clicks, and smooth page transitions",
-      "acceptanceCriteria": [
-        "Buttons attract cursor with magnetic effect within proximity range",
-        "Click interactions trigger ripple animations",
-        "Smooth morphing animations on interactive elements during hover",
-        "Section transitions use slide or fade effects",
-        "All interactions feel responsive with spring physics"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/hooks/useMagneticEffect.ts",
-          "operation": "create",
-          "description": "Create custom hook that tracks cursor position relative to element, calculates magnetic attraction within proximity range, and returns transform values for smooth magnetic button effects using spring physics"
-        },
-        {
-          "path": "frontend/src/hooks/useRippleEffect.ts",
-          "operation": "create",
-          "description": "Create custom hook that handles click position detection, creates ripple DOM elements with expanding animation, and automatically cleans up ripple elements after animation completes"
-        },
-        {
-          "path": "frontend/src/components/Hero.tsx",
-          "operation": "modify",
-          "description": "Apply magnetic cursor effects to CTA buttons using useMagneticEffect hook, add ripple effects on button clicks using useRippleEffect hook, and implement morphing shape animations on hover states"
-        },
-        {
-          "path": "frontend/src/components/Contact.tsx",
-          "operation": "modify",
-          "description": "Add magnetic effects to submit button and contact cards, implement ripple effects on clickable elements, and add morphing animations to interactive components on hover"
-        },
-        {
-          "path": "frontend/src/components/Navbar.tsx",
-          "operation": "modify",
-          "description": "Add magnetic effects to navigation menu items, implement ripple effects on nav links, and create smooth morphing animations for the mobile menu toggle button"
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Wrap section components with Framer Motion AnimatePresence for smooth page transitions between sections using slide or fade effects with spring physics"
-        }
-      ]
-    },
-    {
-      "id": "REQ-15",
-      "summary": "Enhance Hero section with animated gradient text, floating UI element mockups with parallax depth, and particle effects in the background",
-      "acceptanceCriteria": [
-        "Headline text features animated gradient that transitions smoothly",
-        "Floating mockup elements (wireframes, Figma icons) with 3D parallax movement",
-        "Background includes subtle particle system or grid animation",
-        "Elements respond to mouse movement for depth perception",
-        "Performance remains smooth with 60fps animations"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/Hero.tsx",
-          "operation": "modify",
-          "description": "Add animated gradient text effect to headline using CSS keyframes and background-clip, integrate generated images (frontend/public/assets/generated/wireframe-float.dim_400x400.png, frontend/public/assets/generated/figma-icon.dim_120x120.png) as floating mockup elements positioned absolutely with Framer Motion parallax effects, implement mouse tracking for 3D parallax depth, and add particle system or animated grid in background layer"
-        },
-        {
-          "path": "frontend/src/hooks/useMouseParallax.ts",
-          "operation": "create",
-          "description": "Create custom hook that tracks mouse position across viewport, calculates parallax offset values based on mouse coordinates and element depth layers, and returns transform values for creating 3D depth perception on floating elements"
-        },
-        {
-          "path": "frontend/src/components/ParticleBackground.tsx",
-          "operation": "create",
-          "description": "Create particle system component with animated dots or grid pattern that subtly moves in the background, uses canvas or CSS animations for GPU acceleration, and integrates the generated frontend/public/assets/generated/design-grid.dim_800x800.png as a base layer with overlay effects"
+          "description": "Replace teal and emerald color definitions with new design-focused color palette using OKLCH color space. Define new primary, secondary, and accent colors that reflect UI/UX design industry aesthetics (e.g., colors inspired by design tools like Figma purple, Sketch orange, Adobe Creative Cloud blue). Ensure all color values maintain WCAG AA contrast ratios for accessibility."
         },
         {
           "path": "frontend/src/index.css",
           "operation": "modify",
-          "description": "Add keyframe animations for gradient text color shifting, define CSS custom properties for gradient color stops, and add utility classes for animated gradients that can be applied to text elements"
-        }
-      ]
-    },
-    {
-      "id": "REQ-16",
-      "summary": "Add reveal-on-scroll animations with mask effects where content appears through animated masks as user scrolls",
-      "acceptanceCriteria": [
-        "Section headings reveal with wipe or split mask animations",
-        "Images and cards appear through circular or rectangular masks",
-        "Mask animations synchronized with scroll progress",
-        "Smooth transitions with easing curves",
-        "Animations trigger at appropriate scroll thresholds"
-      ],
-      "file_operations": [
+          "description": "Update CSS custom properties for light and dark themes with new design-focused color values in OKLCH color space. Replace all teal/emerald references with the new palette. Update background, foreground, primary, secondary, accent, muted, and border color variables to reflect the new design theme while maintaining the existing glassmorphism utility classes."
+        },
         {
-          "path": "frontend/src/hooks/useScrollMask.ts",
-          "operation": "create",
-          "description": "Create custom hook that tracks scroll position, calculates mask reveal progress based on element viewport intersection, and returns CSS clip-path or mask values for wipe, circle, and split reveal animations synchronized with scroll"
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "modify",
+          "description": "Update gradient classes, button colors, and glassmorphism effects to use the new design-focused color scheme. Replace teal/emerald gradient references with new palette colors. Ensure floating UI elements and particle effects reflect the updated theme."
         },
         {
           "path": "frontend/src/components/About.tsx",
           "operation": "modify",
-          "description": "Add mask reveal animations to section heading using wipe effect, apply circular mask reveal to profile image that expands as user scrolls, and implement rectangular mask reveal for key point cards"
+          "description": "Update glassmorphism card backgrounds, border colors, and gradient overlays to use the new design-focused palette. Replace teal/emerald accents on key points cards with new theme colors while maintaining the existing layout and animation structure."
         },
         {
           "path": "frontend/src/components/Experience.tsx",
           "operation": "modify",
-          "description": "Apply split mask animation to section heading, add wipe reveal effect to timeline container, and implement mask animations for achievement items that reveal as user scrolls"
+          "description": "Update timeline indicators, card backgrounds, and accent colors to use the new design-focused color scheme. Replace teal/emerald timeline dots and gradient effects with new palette colors."
         },
         {
           "path": "frontend/src/components/Projects.tsx",
           "operation": "modify",
-          "description": "Add mask reveal animations to section heading with wipe effect, apply rectangular mask reveal to project cards that expand from center or sides as they enter viewport"
+          "description": "Update project card glassmorphism effects, spotlight hover interactions, and gradient overlays to use the new design-focused palette. Replace teal/emerald accents with new theme colors while preserving 3D tilt and animation functionality."
         },
         {
           "path": "frontend/src/components/Skills.tsx",
           "operation": "modify",
-          "description": "Implement mask reveal animation for section heading, add circular or rectangular mask reveals to skill category cards in the bento grid synchronized with scroll progress"
+          "description": "Update skill category card backgrounds, borders, and icon accent colors to use the new design-focused color scheme. Replace teal/emerald bento grid styling with new palette colors while maintaining the existing layout structure."
+        },
+        {
+          "path": "frontend/src/components/Contact.tsx",
+          "operation": "modify",
+          "description": "Update contact card glassmorphism effects, form input borders, and button colors to use the new design-focused palette. Replace teal/emerald styling with new theme colors while preserving form functionality."
+        },
+        {
+          "path": "frontend/src/components/ScrollProgress.tsx",
+          "operation": "modify",
+          "description": "Update progress bar gradient to use the new design-focused color scheme, replacing teal/emerald gradient with new palette colors."
+        },
+        {
+          "path": "frontend/src/components/ScrollToTop.tsx",
+          "operation": "modify",
+          "description": "Update button background, hover effects, and icon color to use the new design-focused palette, replacing teal/emerald styling with new theme colors."
         }
       ]
     },
     {
-      "id": "REQ-17",
-      "summary": "Implement premium hover effects on Project cards including 3D tilt, cursor-following spotlight, and smooth scale transformations with glow",
+      "id": "REQ-23",
+      "summary": "Update AnimatedBackground with design-focused visual elements replacing current grid pattern",
       "acceptanceCriteria": [
-        "Project cards tilt in 3D based on cursor position",
-        "Spotlight effect follows mouse across card surface",
-        "Smooth scale animation on hover entry/exit",
-        "Gradient glow appears on hover with color matching theme",
-        "Performance optimized with transform and opacity only"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/hooks/use3DTilt.ts",
-          "operation": "create",
-          "description": "Create custom hook that calculates 3D tilt transform based on mouse position relative to card element, returns rotateX and rotateY values for perspective effect, and handles smooth transitions with spring physics"
-        },
-        {
-          "path": "frontend/src/hooks/useSpotlight.ts",
-          "operation": "create",
-          "description": "Create custom hook that tracks mouse position within card boundaries, calculates radial gradient position for spotlight effect, and returns CSS background or mask values for cursor-following spotlight"
-        },
-        {
-          "path": "frontend/src/components/Projects.tsx",
-          "operation": "modify",
-          "description": "Apply 3D tilt effect to project cards using use3DTilt hook, add cursor-following spotlight effect using useSpotlight hook, implement smooth scale transformation on hover entry/exit with Framer Motion, and add gradient glow effect matching teal/emerald theme that appears on hover"
-        },
-        {
-          "path": "frontend/src/index.css",
-          "operation": "modify",
-          "description": "Add utility classes for 3D perspective transforms, spotlight radial gradients, hover glow effects with theme colors, and smooth scale transitions optimized with transform and opacity only"
-        }
-      ]
-    },
-    {
-      "id": "REQ-18",
-      "summary": "Add animated background grid or mesh gradient that subtly morphs and shifts colors throughout the page",
-      "acceptanceCriteria": [
-        "Animated mesh gradient or grid pattern in page background",
-        "Colors shift subtly over time using smooth transitions",
-        "Background provides depth without competing with content",
-        "Animation is GPU-accelerated for performance",
-        "Pattern complements existing teal/emerald theme"
+        "Background animation reflects UI/UX design context (e.g., wireframe grids, design system patterns, interface elements)",
+        "New background complements the updated color scheme",
+        "Animation remains subtle and does not distract from content",
+        "Background maintains smooth performance across devices"
       ],
       "file_operations": [
         {
           "path": "frontend/src/components/AnimatedBackground.tsx",
-          "operation": "create",
-          "description": "Create animated background component with mesh gradient or grid pattern that uses CSS keyframes or canvas for GPU-accelerated animation, implements subtle color shifting with teal/emerald theme colors, provides depth without overwhelming content, and renders as a fixed position layer behind all content"
-        },
-        {
-          "path": "frontend/src/App.tsx",
           "operation": "modify",
-          "description": "Add AnimatedBackground component as the first child in the main render tree with fixed positioning so it appears behind all sections and provides consistent animated background throughout the page"
-        },
-        {
-          "path": "frontend/src/index.css",
-          "operation": "modify",
-          "description": "Add keyframe animations for mesh gradient color shifting, define gradient color stops using teal/emerald theme, add utility classes for animated backgrounds, and ensure animations are GPU-accelerated with transform and opacity properties"
+          "description": "Replace the current moving grid lines animation with design-focused visual elements such as wireframe grids, design system tokens, or subtle interface patterns. Update canvas drawing logic to render design-related shapes (e.g., bounding boxes, alignment guides, artboard outlines) instead of simple grid lines. Apply the new design-focused color palette to all drawn elements and gradient mesh overlay. Maintain smooth requestAnimationFrame performance and ensure the animation remains subtle and non-distracting."
         }
       ]
     },
     {
-      "id": "REQ-19",
-      "summary": "Enhance Skills bento grid with advanced card interactions including magnetic hover effects, staggered flip animations, and pulsing glows on skill icons",
+      "id": "REQ-24",
+      "summary": "Update glassmorphism effects, gradients, and overlays across all sections with new design-focused palette",
       "acceptanceCriteria": [
-        "Skill cards feature staggered flip or rotation animations on reveal",
-        "Adjacent cards react to hover with magnetic repulsion/attraction",
-        "Skill category icons pulse with glow effect",
-        "Smooth grid layout with responsive spacing",
-        "Animations enhance without overwhelming content"
+        "All glassmorphism effects use colors from the new palette",
+        "Gradient overlays are updated to match the design theme",
+        "Visual consistency is maintained across all portfolio sections",
+        "Glass effects remain visually appealing with the new colors"
       ],
       "file_operations": [
-        {
-          "path": "frontend/src/components/Skills.tsx",
-          "operation": "modify",
-          "description": "Add staggered flip or rotation animations to skill cards using Framer Motion on scroll reveal, implement magnetic hover effects where adjacent cards react with subtle repulsion or attraction using useMagneticEffect hook, add pulsing glow animations to skill category icons with CSS keyframes, and ensure smooth grid layout with responsive spacing"
-        },
-        {
-          "path": "frontend/src/hooks/useMagneticGrid.ts",
-          "operation": "create",
-          "description": "Create custom hook that detects hover on grid items, calculates repulsion or attraction forces on adjacent cards based on proximity, and returns transform values for creating magnetic interactions between skill cards in the bento grid"
-        },
-        {
-          "path": "frontend/src/index.css",
-          "operation": "modify",
-          "description": "Add keyframe animations for icon pulsing glow effects, define pulsing animation timing with smooth easing, and create utility classes for skill card flip rotations and magnetic hover transforms"
-        }
-      ]
-    },
-    {
-      "id": "REQ-20",
-      "summary": "Add smooth page transition overlay with animated logo or loading state when navigating between major sections",
-      "acceptanceCriteria": [
-        "Section transitions feature brief overlay animation",
-        "Loading state shows animated logo or spinner",
-        "Transitions are quick (200-400ms) but noticeable",
-        "Smooth fade or slide effects on content change",
-        "Navigation feels fluid and intentional"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/PageTransition.tsx",
-          "operation": "create",
-          "description": "Create page transition overlay component that displays during section navigation with animated logo or spinner, uses Framer Motion for fade or slide animations lasting 200-400ms, and creates fluid transition experience between major sections"
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Integrate PageTransition component to wrap section content, trigger transition overlay when user navigates between sections via Navbar links, and coordinate transition timing with section scroll behavior"
-        },
         {
           "path": "frontend/src/components/Navbar.tsx",
           "operation": "modify",
-          "description": "Update navigation link click handlers to trigger page transition overlay before scrolling to target section, coordinate with PageTransition component for smooth section changes"
+          "description": "Update navigation bar glassmorphism background and active section indicator colors to use the new design-focused palette. Replace teal/emerald accent colors with new theme colors while maintaining scroll detection and active state functionality."
+        },
+        {
+          "path": "frontend/src/components/ParticleBackground.tsx",
+          "operation": "modify",
+          "description": "Update particle grid pattern colors and animation effects to use the new design-focused color scheme. Replace teal/emerald grid colors with new palette values while maintaining the scrolling animation effect."
+        },
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Update footer background and text colors to use the new design-focused palette, ensuring consistency with the overall theme while maintaining readability."
         }
       ]
     },
     {
-      "id": "REQ-21",
-      "summary": "Implement scroll-linked animations where elements transform based on scroll position including progress bars, timeline drawing, and morphing elements",
+      "id": "REQ-25",
+      "summary": "Define new design-focused color scheme in Tailwind config and global CSS using OKLCH color space",
       "acceptanceCriteria": [
-        "Experience timeline features line that draws in with scroll",
-        "Progress indicators show scroll position through page",
-        "Elements transform smoothly based on scroll position",
-        "Scroll-linked animations use requestAnimationFrame for performance",
-        "Transforms are smooth and follow scroll velocity"
+        "CSS custom properties are updated with new color values",
+        "Tailwind configuration includes new color definitions",
+        "All components automatically inherit the new theme colors",
+        "Dark mode styling is preserved with the new palette"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/hooks/useScrollProgress.ts",
-          "operation": "create",
-          "description": "Create custom hook that tracks scroll position through the page using requestAnimationFrame, calculates progress percentage for page or section, and returns values for progress indicators and scroll-linked animations with smooth interpolation"
-        },
-        {
-          "path": "frontend/src/components/ScrollProgress.tsx",
-          "operation": "create",
-          "description": "Create scroll progress indicator component that displays a progress bar or circle showing user's position through the page, uses useScrollProgress hook for real-time updates, and renders as a fixed position element"
-        },
-        {
-          "path": "frontend/src/components/Experience.tsx",
+          "path": "frontend/index.css",
           "operation": "modify",
-          "description": "Add timeline line that draws in with scroll progress using useScrollProgress hook, implement SVG path animation or clip-path reveal synchronized with scroll position, and ensure smooth drawing animation that follows scroll velocity"
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Add ScrollProgress component to display page scroll progress indicator, position it as a fixed element (top bar or circular indicator), and ensure it updates smoothly as user scrolls through sections"
-        },
-        {
-          "path": "frontend/src/hooks/useScrollVelocity.ts",
-          "operation": "create",
-          "description": "Create custom hook that calculates scroll velocity using requestAnimationFrame, tracks delta between scroll positions over time, and returns velocity values for creating momentum-based animations that follow scroll speed"
+          "description": "Update global CSS variables with new design-focused color values in OKLCH color space. Define primary, secondary, accent, and supporting colors that reflect UI/UX design industry aesthetics. Ensure color definitions support both light and dark modes (though the app forces dark mode). Maintain the existing structure for background, foreground, card, and border variables while replacing teal/emerald values with the new palette."
         }
       ]
     }
