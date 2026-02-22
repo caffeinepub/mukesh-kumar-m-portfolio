@@ -1,0 +1,256 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Modern portfolio website for Mukesh Kumar M, a UI/UX Developer - featuring Mobbin-style interface with advanced animations and UI/UX-focused interactive effects, minimalist dark theme with teal accents, animated hero section, timeline-based experience display, project showcases (Hospital and Travel Management systems), bento-grid skills section, and contact form. Built with React, Vite, Tailwind CSS, shadcn/ui, and Framer Motion.",
+  "architectural_notes": [
+    "React + Vite 5 as framework foundation",
+    "Tailwind CSS for styling with teal/emerald accent color",
+    "shadcn/ui components (cards, buttons, dialogs, badges)",
+    "Lucide React for icons",
+    "Framer Motion for scroll reveals, transitions, and hover effects",
+    "Inter or Plus Jakarta Sans from Google Fonts",
+    "Dark mode by default with glassmorphism card effects",
+    "Mobile-first responsive design approach",
+    "WCAG accessibility compliance required",
+    "Mobbin.com-inspired design patterns (smooth micro-interactions, premium feel)"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Floating wireframe mockup illustration with transparent background showing UI/UX design elements (wireframe-float.dim_400x400.png)\n- Figma tool icon illustration in modern style with glow effect (figma-icon.dim_120x120.png)\n- Abstract design system grid pattern illustration for background (design-grid.dim_800x800.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-hero-section-with-headline-designing-human-centered-digital-experiences-sub-headline-i-am-mukesh-kumar-m-a-ui-ux-developer-based-in-chennai-bridging-the-gap-between-psychology-design-and-business-strategy-two-cta-buttons-labeled-view-projects-and-contact-me-and-smooth-fade-in-animations-using-framer-motion-with-a-subtle-floating-abstract-3d-shape-or-gradient-background",
+      "title": "Create Hero section with headline 'Designing Human-Centered Digital Experiences.', sub-headline 'I am Mukesh Kumar M, a UI/UX Developer based in Chennai bridging the gap between psychology, design, and business strategy.', two CTA buttons labeled 'View Projects' and 'Contact Me', and smooth fade-in animations using Framer Motion with a subtle floating abstract 3D shape or gradient background",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-about-philosophy-section-highlighting-obsessed-with-finding-the-pain-point-in-a-user-s-journey-and-fixing-it-with-simple-elegant-solutions-with-a-grid-displaying-three-key-points-product-strategy-solving-business-problems-design-systems-building-modular-ui-kits-visual-storytelling-creating-cohesive-brand-voices-and-include-a-brief-bio-mentioning-b-e-mechanical-background-from-psna-college-showing-adaptability",
+      "title": "Create About & Philosophy section highlighting 'Obsessed with finding the 'pain point' in a user's journey and fixing it with simple, elegant solutions.' with a grid displaying three key points: 'Product Strategy: Solving business problems.', 'Design Systems: Building modular UI kits.', 'Visual Storytelling: Creating cohesive brand voices.', and include a brief bio mentioning B.E. Mechanical background from PSNA College showing adaptability",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-experience-section-with-timeline-layout-displaying-role-ui-ux-developer-at-yoho-technologies-pvt-ltd-04-2025-present-with-bullet-points-and-icons-for-achievements-designed-5-ui-projects-enhancing-engagement-managed-ui-ux-for-7-projects-with-high-budgets-improved-usability-scores-significantly-across-3-major-applications-reduced-user-drop-off-rates-via-a-b-testing",
+      "title": "Create Experience section with timeline layout displaying role 'UI/UX Developer at Yoho Technologies Pvt Ltd (04/2025 - Present)' with bullet points and icons for achievements: 'Designed 5+ UI projects enhancing engagement.', 'Managed UI/UX for 7 projects with high budgets.', 'Improved usability scores significantly across 3 major applications.', 'Reduced user drop-off rates via A/B testing.'",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-projects-section-with-card-grid-layout-displaying-two-projects-1-hospital-management-system-with-description-streamlined-clinical-workflows-with-persona-driven-interfaces-and-a-scalable-design-system-and-tags-dashboard-design-healthcare-ux-data-visualization-2-tours-and-travel-management-system-with-description-end-to-end-travel-platform-with-seamless-booking-interactive-itineraries-and-a-responsive-engine-and-tags-booking-engine-consumer-app-travel-tech-with-hover-effects-that-provide-slight-lift-and-shadow",
+      "title": "Create Projects section with card grid layout displaying two projects: (1) Hospital Management System with description 'Streamlined clinical workflows with persona-driven interfaces and a scalable design system.' and tags 'Dashboard Design, Healthcare UX, Data Visualization', (2) Tours and Travel Management System with description 'End-to-end travel platform with seamless booking, interactive itineraries, and a responsive engine.' and tags 'Booking Engine, Consumer App, Travel Tech', with hover effects that provide slight lift and shadow",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-skills-section-using-bento-grid-layout-with-categorized-skills-design-figma-ai-gen-design-figma-make-galileo-ai-ux-pilot-jasper-prototyping-motion-spline-protopie-figmotion-testing-handoff-maze-lyssna-zero-height-google-stitch-languages-tamil-native-english-proficient",
+      "title": "Create Skills section using Bento Grid layout with categorized skills: Design (Figma), AI & Gen Design (Figma Make, Galileo AI, UX Pilot, Jasper), Prototyping & Motion (Spline, Protopie, Figmotion), Testing & Handoff (Maze, Lyssna, Zero height, Google Stitch), Languages (Tamil - Native, English - Proficient)",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-contact-section-with-minimalist-form-containing-name-email-and-message-fields-displaying-contact-information-email-mukeshhkumarr16-gmail-com-phone-91-9500840471-and-linkedin-link-https-linkedin-com-in-mukesh-kumar-m-067932386",
+      "title": "Create Contact section with minimalist form containing Name, Email, and Message fields, displaying contact information: Email 'mukeshhkumarr16@gmail.com', Phone '+91 9500840471', and LinkedIn link 'https://linkedin.com/in/mukesh-kumar-m-067932386'",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-sticky-navbar-with-blur-effect-that-remains-visible-during-page-scrolling",
+      "title": "Implement sticky navbar with blur effect that remains visible during page scrolling",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-scroll-to-top-button-that-appears-when-user-scrolls-down-the-page",
+      "title": "Add Scroll to Top button that appears when user scrolls down the page",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-modern-dark-mode-theme-by-default-with-teal-emerald-primary-accent-color-throughout-the-site-using-minimalist-and-clean-design-aesthetic-with-glassmorphism-details-on-cards-ensuring-wcag-accessibility-compliance",
+      "title": "Apply modern dark mode theme by default with teal/emerald primary accent color throughout the site, using minimalist and clean design aesthetic with glassmorphism details on cards, ensuring WCAG accessibility compliance",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-entire-website-is-fully-responsive-using-a-mobile-first-approach-adapting-layouts-and-components-for-mobile-tablet-and-desktop-viewports",
+      "title": "Ensure the entire website is fully responsive using a mobile-first approach, adapting layouts and components for mobile, tablet, and desktop viewports",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-creative-coherent-visual-theme-with-a-professional-and-slick-aesthetic-using-inter-or-plus-jakarta-sans-font-from-google-fonts-incorporating-scroll-reveal-animations-and-smooth-transitions-throughout-the-site-using-framer-motion",
+      "title": "Apply a creative, coherent visual theme with a professional and slick aesthetic using Inter or Plus Jakarta Sans font from Google Fonts, incorporating scroll reveal animations and smooth transitions throughout the site using Framer Motion",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-all-existing-scroll-animations-with-framer-motion-based-advanced-animations-including-staggered-children-spring-physics-parallax-effects-and-micro-interactions-throughout-all-sections-hero-about-experience-projects-skills-contact",
+      "title": "Replace all existing scroll animations with Framer Motion-based advanced animations including staggered children, spring physics, parallax effects, and micro-interactions throughout all sections (Hero, About, Experience, Projects, Skills, Contact)",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-mobbin-com-style-glassmorphism-cards-with-backdrop-blur-subtle-borders-and-gradient-overlays-for-all-content-sections-about-cards-experience-timeline-project-cards-skills-grid-contact-form",
+      "title": "Implement Mobbin.com-style glassmorphism cards with backdrop blur, subtle borders, and gradient overlays for all content sections (About cards, Experience timeline, Project cards, Skills grid, Contact form)",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-ui-ux-developer-themed-interactive-micro-interactions-including-magnetic-cursor-effects-on-buttons-morphing-shapes-on-hover-ripple-effects-on-clicks-and-smooth-page-transitions-between-sections",
+      "title": "Add UI/UX developer-themed interactive micro-interactions including magnetic cursor effects on buttons, morphing shapes on hover, ripple effects on clicks, and smooth page transitions between sections",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-enhance-hero-section-with-animated-gradient-text-that-shifts-colors-floating-ui-element-mockups-wireframes-design-tools-icons-with-parallax-depth-and-particle-effects-in-the-background",
+      "title": "Enhance Hero section with animated gradient text that shifts colors, floating UI element mockups (wireframes, design tools icons) with parallax depth, and particle effects in the background",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-reveal-on-scroll-animations-with-mask-effects-where-content-appears-through-animated-masks-wipes-circles-splits-as-user-scrolls-through-each-section",
+      "title": "Add reveal-on-scroll animations with mask effects, where content appears through animated masks (wipes, circles, splits) as user scrolls through each section",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-premium-hover-effects-on-project-cards-including-3d-tilt-on-mouse-movement-inner-spotlight-that-follows-cursor-and-smooth-scale-transformations-with-glow-effects",
+      "title": "Implement premium hover effects on Project cards including 3D tilt on mouse movement, inner spotlight that follows cursor, and smooth scale transformations with glow effects",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-animated-background-grid-or-mesh-gradient-that-subtly-morphs-and-shifts-colors-throughout-the-page-creating-depth-and-visual-interest-without-distracting-from-content",
+      "title": "Add animated background grid or mesh gradient that subtly morphs and shifts colors throughout the page, creating depth and visual interest without distracting from content",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-enhance-skills-bento-grid-with-advanced-card-interactions-including-magnetic-hover-effects-between-adjacent-cards-staggered-flip-animations-on-scroll-reveal-and-subtle-pulsing-glows-on-skill-icons",
+      "title": "Enhance Skills bento grid with advanced card interactions including magnetic hover effects between adjacent cards, staggered flip animations on scroll reveal, and subtle pulsing glows on skill icons",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-smooth-page-transition-overlay-with-animated-logo-or-loading-state-when-navigating-between-major-sections-creating-seamless-flow",
+      "title": "Add smooth page transition overlay with animated logo or loading state when navigating between major sections, creating seamless flow",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-scroll-linked-animations-where-elements-transform-based-on-scroll-position-including-progress-bars-timeline-connections-that-draw-in-and-elements-that-morph-as-they-enter-viewport",
+      "title": "Implement scroll-linked animations where elements transform based on scroll position, including progress bars, timeline connections that draw in, and elements that morph as they enter viewport",
+      "reqIds": [
+        "REQ-21"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Hero section with animated headline, sub-headline, CTA buttons, and floating abstract background",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "About & Philosophy section with key points grid and bio mentioning B.E. Mechanical background",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Timeline-based Experience section for Yoho Technologies role with achievement bullet points",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Projects card grid showcasing Hospital Management System and Tours/Travel Management System",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Bento-grid Skills section with categorized tools (Design, AI, Prototyping, Testing, Languages)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Contact section with form and displayed contact information (email, phone, LinkedIn)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Sticky navbar with blur effect",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Scroll to Top button",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Hover effects on project cards (lift + shadow)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Mobbin.com-inspired UI with premium animations and UI/UX developer-themed interactive effects",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Mukesh Kumar M Portfolio",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

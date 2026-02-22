@@ -1,0 +1,232 @@
+{
+  "kind": "build_request",
+  "title": "Transform portfolio into Mobbin-inspired UI with premium animations",
+  "projectName": "Portfolio Mukesh Kumar",
+  "priority": "high",
+  "requirements": [
+    {
+      "id": "REQ-12",
+      "text": "Replace all existing scroll animations with Framer Motion-based advanced animations including staggered children, spring physics, parallax effects, and micro-interactions throughout all sections (Hero, About, Experience, Projects, Skills, Contact)",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "great animation and efeccts"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All sections use Framer Motion instead of Intersection Observer for animations",
+        "Staggered animations apply to card grids and list items with spring physics",
+        "Smooth entrance animations with fade, slide, and scale combinations",
+        "Parallax scrolling effects on background elements",
+        "Animation timing and easing curves match premium UI standards"
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "text": "Implement Mobbin.com-style glassmorphism cards with backdrop blur, subtle borders, and gradient overlays for all content sections (About cards, Experience timeline, Project cards, Skills grid, Contact form)",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "mobbin.com styled ui"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Cards feature backdrop-filter blur with semi-transparent backgrounds",
+        "Subtle gradient borders using CSS gradients",
+        "Hover states with smooth glass panel effects and glow",
+        "Consistent glassmorphism aesthetic across all card components",
+        "Visual hierarchy maintained with varying opacity levels"
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "text": "Add UI/UX developer-themed interactive micro-interactions including magnetic cursor effects on buttons, morphing shapes on hover, ripple effects on clicks, and smooth page transitions between sections",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "efeccts relayted to my domain ui and ux dev"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Buttons attract cursor with magnetic effect within proximity range",
+        "Click interactions trigger ripple animations",
+        "Smooth morphing animations on interactive elements during hover",
+        "Section transitions use slide or fade effects",
+        "All interactions feel responsive with spring physics"
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "text": "Enhance Hero section with animated gradient text that shifts colors, floating UI element mockups (wireframes, design tools icons) with parallax depth, and particle effects in the background",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "mobbin.com styled ui",
+          "relayted to my domain ui and ux dev"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Headline text features animated gradient that transitions smoothly",
+        "Floating mockup elements (wireframes, Figma icons) with 3D parallax movement",
+        "Background includes subtle particle system or grid animation",
+        "Elements respond to mouse movement for depth perception",
+        "Performance remains smooth with 60fps animations"
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "text": "Add reveal-on-scroll animations with mask effects, where content appears through animated masks (wipes, circles, splits) as user scrolls through each section",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "great animation"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Section headings reveal with wipe or split mask animations",
+        "Images and cards appear through circular or rectangular masks",
+        "Mask animations synchronized with scroll progress",
+        "Smooth transitions with easing curves",
+        "Animations trigger at appropriate scroll thresholds"
+      ]
+    },
+    {
+      "id": "REQ-17",
+      "text": "Implement premium hover effects on Project cards including 3D tilt on mouse movement, inner spotlight that follows cursor, and smooth scale transformations with glow effects",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "mobbin.com styled ui",
+          "great animation"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Project cards tilt in 3D based on cursor position",
+        "Spotlight effect follows mouse across card surface",
+        "Smooth scale animation on hover entry/exit",
+        "Gradient glow appears on hover with color matching theme",
+        "Performance optimized with transform and opacity only"
+      ]
+    },
+    {
+      "id": "REQ-18",
+      "text": "Add animated background grid or mesh gradient that subtly morphs and shifts colors throughout the page, creating depth and visual interest without distracting from content",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "mobbin.com styled ui"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Animated mesh gradient or grid pattern in page background",
+        "Colors shift subtly over time using smooth transitions",
+        "Background provides depth without competing with content",
+        "Animation is GPU-accelerated for performance",
+        "Pattern complements existing teal/emerald theme"
+      ]
+    },
+    {
+      "id": "REQ-19",
+      "text": "Enhance Skills bento grid with advanced card interactions including magnetic hover effects between adjacent cards, staggered flip animations on scroll reveal, and subtle pulsing glows on skill icons",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "great animation and efeccts"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Skill cards feature staggered flip or rotation animations on reveal",
+        "Adjacent cards react to hover with magnetic repulsion/attraction",
+        "Skill category icons pulse with glow effect",
+        "Smooth grid layout with responsive spacing",
+        "Animations enhance without overwhelming content"
+      ]
+    },
+    {
+      "id": "REQ-20",
+      "text": "Add smooth page transition overlay with animated logo or loading state when navigating between major sections, creating seamless flow",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "mobbin.com styled ui"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Section transitions feature brief overlay animation",
+        "Loading state shows animated logo or spinner",
+        "Transitions are quick (200-400ms) but noticeable",
+        "Smooth fade or slide effects on content change",
+        "Navigation feels fluid and intentional"
+      ]
+    },
+    {
+      "id": "REQ-21",
+      "text": "Implement scroll-linked animations where elements transform based on scroll position, including progress bars, timeline connections that draw in, and elements that morph as they enter viewport",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "great animation"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Experience timeline features line that draws in with scroll",
+        "Progress indicators show scroll position through page",
+        "Elements transform smoothly based on scroll position",
+        "Scroll-linked animations use requestAnimationFrame for performance",
+        "Transforms are smooth and follow scroll velocity"
+      ]
+    }
+  ],
+  "constraints": [
+    "Must maintain existing dark mode theme with teal/emerald accents",
+    "All animations must perform at 60fps on modern browsers",
+    "Preserve all existing content and sections (Hero, About, Experience, Projects, Skills, Contact)",
+    "Animations must be accessible and respect prefers-reduced-motion settings",
+    "Do not modify backend/main.mo or immutable frontend paths"
+  ],
+  "nonGoals": [
+    "Changing color scheme or brand identity",
+    "Modifying existing content text or information",
+    "Adding new sections or pages beyond animation enhancements",
+    "Implementing backend functionality or data persistence",
+    "Supporting outdated browsers or non-standard environments"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Floating wireframe mockup illustration with transparent background showing UI/UX design elements (wireframe-float.dim_400x400.png)",
+      "Figma tool icon illustration in modern style with glow effect (figma-icon.dim_120x120.png)",
+      "Abstract design system grid pattern illustration for background (design-grid.dim_800x800.png)"
+    ],
+    "edits": []
+  }
+}
