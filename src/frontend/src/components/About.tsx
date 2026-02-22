@@ -71,7 +71,7 @@ const About = () => {
               className={`transition-all duration-700 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}
             >
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-figma-500/20 to-coral-500/20 rounded-2xl blur-2xl" />
+                <div className="absolute inset-0 bg-gradient-to-br from-figma-500/25 to-coral-500/20 rounded-2xl blur-2xl" />
                 <img
                   src="/assets/generated/mukesh-profile.dim_400x400.png"
                   alt="Mukesh Kumar M"
@@ -115,7 +115,7 @@ const About = () => {
               >
                 <Card className="h-full glass-card group hover:-translate-y-2 transition-all duration-300">
                   <CardContent className="p-6">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-figma-500/20 to-coral-500/20 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-figma-500/25 to-coral-500/20 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
                       <point.icon className="w-6 h-6 text-figma-400" />
                     </div>
                     <h3 className="text-lg font-bold mb-2 text-foreground group-hover:text-figma-400 transition-colors">

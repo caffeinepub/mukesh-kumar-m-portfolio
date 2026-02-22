@@ -1,128 +1,22 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Update background and theme with design-focused color scheme",
+  "title": "Update email address from mukesh@example.com to mukeshhkumarr16@gmail.com",
   "requirements": [
     {
-      "id": "REQ-22",
-      "summary": "Replace teal/emerald color scheme with design-focused palette reflecting UI/UX design principles",
+      "id": "REQ-36",
+      "summary": "Replace all instances of 'mukesh@example.com' with 'mukeshhkumarr16@gmail.com' in the Contact component",
       "acceptanceCriteria": [
-        "New color scheme is applied throughout the portfolio (buttons, accents, gradients, borders)",
-        "Colors reflect design industry aesthetics (e.g., design tool brand colors, creative industry palettes)",
-        "Color scheme maintains WCAG accessibility compliance",
-        "Theme is distinct from the previous teal/emerald palette"
+        "All instances of 'mukesh@example.com' are replaced with 'mukeshhkumarr16@gmail.com'",
+        "Email display in contact information section shows 'mukeshhkumarr16@gmail.com'",
+        "Email input field placeholder (if present) shows 'mukeshhkumarr16@gmail.com'",
+        "No references to 'mukesh@example.com' remain in the Contact component"
       ],
       "file_operations": [
-        {
-          "path": "frontend/tailwind.config.js",
-          "operation": "modify",
-          "description": "Replace teal and emerald color definitions with new design-focused color palette using OKLCH color space. Define new primary, secondary, and accent colors that reflect UI/UX design industry aesthetics (e.g., colors inspired by design tools like Figma purple, Sketch orange, Adobe Creative Cloud blue). Ensure all color values maintain WCAG AA contrast ratios for accessibility."
-        },
-        {
-          "path": "frontend/src/index.css",
-          "operation": "modify",
-          "description": "Update CSS custom properties for light and dark themes with new design-focused color values in OKLCH color space. Replace all teal/emerald references with the new palette. Update background, foreground, primary, secondary, accent, muted, and border color variables to reflect the new design theme while maintaining the existing glassmorphism utility classes."
-        },
-        {
-          "path": "frontend/src/components/Hero.tsx",
-          "operation": "modify",
-          "description": "Update gradient classes, button colors, and glassmorphism effects to use the new design-focused color scheme. Replace teal/emerald gradient references with new palette colors. Ensure floating UI elements and particle effects reflect the updated theme."
-        },
-        {
-          "path": "frontend/src/components/About.tsx",
-          "operation": "modify",
-          "description": "Update glassmorphism card backgrounds, border colors, and gradient overlays to use the new design-focused palette. Replace teal/emerald accents on key points cards with new theme colors while maintaining the existing layout and animation structure."
-        },
-        {
-          "path": "frontend/src/components/Experience.tsx",
-          "operation": "modify",
-          "description": "Update timeline indicators, card backgrounds, and accent colors to use the new design-focused color scheme. Replace teal/emerald timeline dots and gradient effects with new palette colors."
-        },
-        {
-          "path": "frontend/src/components/Projects.tsx",
-          "operation": "modify",
-          "description": "Update project card glassmorphism effects, spotlight hover interactions, and gradient overlays to use the new design-focused palette. Replace teal/emerald accents with new theme colors while preserving 3D tilt and animation functionality."
-        },
-        {
-          "path": "frontend/src/components/Skills.tsx",
-          "operation": "modify",
-          "description": "Update skill category card backgrounds, borders, and icon accent colors to use the new design-focused color scheme. Replace teal/emerald bento grid styling with new palette colors while maintaining the existing layout structure."
-        },
         {
           "path": "frontend/src/components/Contact.tsx",
           "operation": "modify",
-          "description": "Update contact card glassmorphism effects, form input borders, and button colors to use the new design-focused palette. Replace teal/emerald styling with new theme colors while preserving form functionality."
-        },
-        {
-          "path": "frontend/src/components/ScrollProgress.tsx",
-          "operation": "modify",
-          "description": "Update progress bar gradient to use the new design-focused color scheme, replacing teal/emerald gradient with new palette colors."
-        },
-        {
-          "path": "frontend/src/components/ScrollToTop.tsx",
-          "operation": "modify",
-          "description": "Update button background, hover effects, and icon color to use the new design-focused palette, replacing teal/emerald styling with new theme colors."
-        }
-      ]
-    },
-    {
-      "id": "REQ-23",
-      "summary": "Update AnimatedBackground with design-focused visual elements replacing current grid pattern",
-      "acceptanceCriteria": [
-        "Background animation reflects UI/UX design context (e.g., wireframe grids, design system patterns, interface elements)",
-        "New background complements the updated color scheme",
-        "Animation remains subtle and does not distract from content",
-        "Background maintains smooth performance across devices"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/AnimatedBackground.tsx",
-          "operation": "modify",
-          "description": "Replace the current moving grid lines animation with design-focused visual elements such as wireframe grids, design system tokens, or subtle interface patterns. Update canvas drawing logic to render design-related shapes (e.g., bounding boxes, alignment guides, artboard outlines) instead of simple grid lines. Apply the new design-focused color palette to all drawn elements and gradient mesh overlay. Maintain smooth requestAnimationFrame performance and ensure the animation remains subtle and non-distracting."
-        }
-      ]
-    },
-    {
-      "id": "REQ-24",
-      "summary": "Update glassmorphism effects, gradients, and overlays across all sections with new design-focused palette",
-      "acceptanceCriteria": [
-        "All glassmorphism effects use colors from the new palette",
-        "Gradient overlays are updated to match the design theme",
-        "Visual consistency is maintained across all portfolio sections",
-        "Glass effects remain visually appealing with the new colors"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/Navbar.tsx",
-          "operation": "modify",
-          "description": "Update navigation bar glassmorphism background and active section indicator colors to use the new design-focused palette. Replace teal/emerald accent colors with new theme colors while maintaining scroll detection and active state functionality."
-        },
-        {
-          "path": "frontend/src/components/ParticleBackground.tsx",
-          "operation": "modify",
-          "description": "Update particle grid pattern colors and animation effects to use the new design-focused color scheme. Replace teal/emerald grid colors with new palette values while maintaining the scrolling animation effect."
-        },
-        {
-          "path": "frontend/src/components/Footer.tsx",
-          "operation": "modify",
-          "description": "Update footer background and text colors to use the new design-focused palette, ensuring consistency with the overall theme while maintaining readability."
-        }
-      ]
-    },
-    {
-      "id": "REQ-25",
-      "summary": "Define new design-focused color scheme in Tailwind config and global CSS using OKLCH color space",
-      "acceptanceCriteria": [
-        "CSS custom properties are updated with new color values",
-        "Tailwind configuration includes new color definitions",
-        "All components automatically inherit the new theme colors",
-        "Dark mode styling is preserved with the new palette"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/index.css",
-          "operation": "modify",
-          "description": "Update global CSS variables with new design-focused color values in OKLCH color space. Define primary, secondary, accent, and supporting colors that reflect UI/UX design industry aesthetics. Ensure color definitions support both light and dark modes (though the app forces dark mode). Maintain the existing structure for background, foreground, card, and border variables while replacing teal/emerald values with the new palette."
+          "description": "Replace all occurrences of the email address 'mukesh@example.com' with 'mukeshhkumarr16@gmail.com' throughout the Contact component, including displayed contact information in the glassmorphism cards and any form placeholder text in the email input field"
         }
       ]
     }

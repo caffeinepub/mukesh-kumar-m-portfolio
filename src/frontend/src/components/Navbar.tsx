@@ -66,9 +66,14 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-16 sm:h-20">
             <button
               onClick={() => scrollToSection('hero')}
-              className="text-xl sm:text-2xl font-bold animated-gradient-text hover:opacity-80 transition-all duration-300 hover:scale-105 active:scale-95"
+              className="hover:opacity-80 transition-all duration-300 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-figma-400 focus:ring-offset-2 focus:ring-offset-background rounded-md"
+              aria-label="Go to top"
             >
-              MKM
+              <img
+                src="/assets/generated/mk-logo.dim_120x40.png"
+                alt="MK - UI/UX Designer Logo"
+                className="h-8 sm:h-10 w-auto"
+              />
             </button>
 
             {/* Desktop Navigation */}

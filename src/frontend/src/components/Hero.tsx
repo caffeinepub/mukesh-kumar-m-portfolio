@@ -39,17 +39,6 @@ const Hero = () => {
     >
       <ParticleBackground />
 
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url(/assets/generated/hero-abstract.dim_1920x1080.png)',
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/80 to-background" />
-      </div>
-
       {/* Floating UI Elements with Parallax */}
       <div
         className="absolute top-1/4 left-1/4 w-32 h-32 opacity-20 pointer-events-none hidden lg:block transition-transform duration-300"
@@ -77,10 +66,11 @@ const Hero = () => {
         />
       </div>
 
-      {/* Floating Gradient Orbs */}
+      {/* Enhanced Floating Gradient Orbs */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 sm:w-96 sm:h-96 bg-figma-500/20 rounded-full blur-3xl animate-pulse-slow" />
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 sm:w-96 sm:h-96 bg-figma-500/25 rounded-full blur-3xl animate-pulse-slow" />
         <div className="absolute bottom-1/4 right-1/4 w-64 h-64 sm:w-96 sm:h-96 bg-coral-500/20 rounded-full blur-3xl animate-pulse-slower" />
+        <div className="absolute top-1/2 left-1/2 w-48 h-48 sm:w-72 sm:h-72 bg-tangerine-500/15 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '1s' }} />
       </div>
 
       {/* Content */}
@@ -115,7 +105,7 @@ const Hero = () => {
             <Button
               size="lg"
               onClick={() => scrollToSection('projects')}
-              className="bg-gradient-to-r from-figma-500 to-coral-500 hover:from-figma-600 hover:to-coral-600 text-white shadow-lg hover:shadow-figma-500/50 transition-all duration-300 hover:scale-105 active:scale-95 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6"
+              className="bg-gradient-to-r from-figma-500 to-coral-500 hover:from-figma-600 hover:to-coral-600 text-white shadow-lg hover:shadow-glow-md transition-all duration-300 hover:scale-105 active:scale-95 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6"
             >
               View My Work
               <ArrowRight className="ml-2 h-5 w-5" />
@@ -124,24 +114,21 @@ const Hero = () => {
               size="lg"
               variant="outline"
               onClick={() => scrollToSection('contact')}
-              className="border-2 border-figma-500/50 hover:bg-figma-500/10 hover:border-figma-500 transition-all duration-300 hover:scale-105 active:scale-95 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6"
+              className="border-2 border-figma-500/50 hover:border-figma-500 hover:bg-figma-500/10 text-foreground hover:text-figma-400 shadow-lg hover:shadow-glow-sm transition-all duration-300 hover:scale-105 active:scale-95 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6"
             >
               <Mail className="mr-2 h-5 w-5" />
-              Contact Me
+              Get In Touch
             </Button>
           </div>
+        </div>
+      </div>
 
-          {/* Scroll Indicator */}
-          <div
-            className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-fade-in"
-            style={{ animationDelay: '1s' }}
-          >
-            <div className="flex flex-col items-center gap-2">
-              <span className="text-sm text-muted-foreground">Scroll to explore</span>
-              <div className="w-6 h-10 border-2 border-figma-500/50 rounded-full flex items-start justify-center p-2">
-                <div className="w-1.5 h-3 bg-figma-500 rounded-full animate-scroll-indicator" />
-              </div>
-            </div>
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-fade-in" style={{ animationDelay: '1s' }}>
+        <div className="flex flex-col items-center gap-2 text-muted-foreground">
+          <span className="text-sm font-medium">Scroll to explore</span>
+          <div className="w-6 h-10 border-2 border-figma-500/50 rounded-full flex items-start justify-center p-2">
+            <div className="w-1.5 h-3 bg-figma-500 rounded-full animate-scroll-indicator" />
           </div>
         </div>
       </div>

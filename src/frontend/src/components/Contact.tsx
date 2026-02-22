@@ -45,7 +45,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'mukesh@example.com',
+      value: 'mukeshhkumarr16@gmail.com',
     },
     {
       icon: MapPin,
@@ -85,7 +85,7 @@ const Contact = () => {
                   <Card className="glass-card group">
                     <CardContent className="p-6">
                       <div className="flex items-start gap-4">
-                        <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-figma-500/20 to-coral-500/20 flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+                        <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-figma-500/25 to-coral-500/20 flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
                           <info.icon className="w-6 h-6 text-figma-400" />
                         </div>
                         <div>
@@ -147,7 +147,7 @@ const Contact = () => {
                     <Button
                       type="submit"
                       size="lg"
-                      className="w-full bg-gradient-to-r from-figma-500 to-coral-500 hover:from-figma-600 hover:to-coral-600 text-white shadow-lg hover:shadow-figma-500/50 transition-all duration-300 hover:scale-105 active:scale-95"
+                      className="w-full bg-gradient-to-r from-figma-500 to-coral-500 hover:from-figma-600 hover:to-coral-600 text-white shadow-lg hover:shadow-glow-md transition-all duration-300 hover:scale-105 active:scale-95"
                     >
                       Send Message
                     </Button>

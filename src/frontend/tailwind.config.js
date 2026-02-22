@@ -66,20 +66,47 @@ export default {
                     border: 'oklch(var(--sidebar-border))',
                     ring: 'oklch(var(--sidebar-ring))'
                 },
+                // Enhanced figma purple palette with refined OKLCH values
                 figma: {
-                    400: 'oklch(0.68 0.25 300)',
-                    500: 'oklch(0.65 0.25 300)',
-                    600: 'oklch(0.58 0.25 300)',
+                    50: 'oklch(0.96 0.02 295)',
+                    100: 'oklch(0.92 0.05 295)',
+                    200: 'oklch(0.85 0.10 295)',
+                    300: 'oklch(0.78 0.18 295)',
+                    400: 'oklch(0.72 0.24 295)',
+                    500: 'oklch(0.68 0.28 295)',
+                    600: 'oklch(0.62 0.26 295)',
+                    700: 'oklch(0.54 0.22 295)',
+                    800: 'oklch(0.44 0.18 295)',
+                    900: 'oklch(0.34 0.14 295)',
+                    950: 'oklch(0.24 0.10 295)',
                 },
+                // Enhanced coral palette with smoother transitions
                 coral: {
-                    400: 'oklch(0.73 0.20 15)',
-                    500: 'oklch(0.70 0.20 15)',
-                    600: 'oklch(0.63 0.20 15)',
+                    50: 'oklch(0.96 0.02 10)',
+                    100: 'oklch(0.92 0.05 10)',
+                    200: 'oklch(0.86 0.10 10)',
+                    300: 'oklch(0.80 0.16 10)',
+                    400: 'oklch(0.75 0.22 10)',
+                    500: 'oklch(0.72 0.24 10)',
+                    600: 'oklch(0.66 0.22 10)',
+                    700: 'oklch(0.58 0.19 10)',
+                    800: 'oklch(0.48 0.15 10)',
+                    900: 'oklch(0.38 0.12 10)',
+                    950: 'oklch(0.28 0.08 10)',
                 },
+                // Enhanced tangerine palette with warmer tones
                 tangerine: {
-                    400: 'oklch(0.75 0.18 45)',
-                    500: 'oklch(0.72 0.18 45)',
-                    600: 'oklch(0.65 0.18 45)',
+                    50: 'oklch(0.97 0.02 40)',
+                    100: 'oklch(0.93 0.05 40)',
+                    200: 'oklch(0.87 0.10 40)',
+                    300: 'oklch(0.82 0.16 40)',
+                    400: 'oklch(0.78 0.20 40)',
+                    500: 'oklch(0.76 0.22 40)',
+                    600: 'oklch(0.70 0.20 40)',
+                    700: 'oklch(0.62 0.17 40)',
+                    800: 'oklch(0.52 0.14 40)',
+                    900: 'oklch(0.42 0.11 40)',
+                    950: 'oklch(0.32 0.08 40)',
                 }
             },
             borderRadius: {
@@ -90,7 +117,10 @@ export default {
                 '2xl': 'calc(var(--radius) + 8px)',
             },
             boxShadow: {
-                xs: '0 1px 2px 0 rgba(0,0,0,0.05)'
+                xs: '0 1px 2px 0 rgba(0,0,0,0.05)',
+                'glow-sm': '0 0 10px oklch(0.68 0.28 295 / 0.3)',
+                'glow-md': '0 0 20px oklch(0.68 0.28 295 / 0.4)',
+                'glow-lg': '0 0 30px oklch(0.68 0.28 295 / 0.5)',
             },
             fontFamily: {
                 sans: ['Plus Jakarta Sans', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],

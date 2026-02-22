@@ -91,7 +91,7 @@ const Experience = () => {
 
           {/* Timeline */}
           <div className="relative">
-            {/* Animated Timeline Line */}
+            {/* Enhanced Animated Timeline Line */}
             <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-border hidden md:block">
               <div
                 className="absolute top-0 left-0 w-full bg-gradient-to-b from-figma-500 via-coral-500 to-tangerine-500 transition-all duration-300"
@@ -107,15 +107,15 @@ const Experience = () => {
                   className={`relative transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
                   style={{ transitionDelay: `${index * 300}ms` }}
                 >
-                  {/* Timeline Dot */}
-                  <div className="absolute left-8 top-8 w-4 h-4 rounded-full bg-gradient-to-br from-figma-500 to-coral-500 border-4 border-background hidden md:block transform -translate-x-1/2 z-10 shadow-lg" />
+                  {/* Enhanced Timeline Dot */}
+                  <div className="absolute left-8 top-8 w-4 h-4 rounded-full bg-gradient-to-br from-figma-500 to-coral-500 border-4 border-background hidden md:block transform -translate-x-1/2 z-10 shadow-glow-sm" />
 
                   {/* Content */}
                   <div className="md:ml-20">
                     <Card className="glass-card group hover:-translate-y-2 transition-all duration-300">
                       <CardContent className="p-6 sm:p-8">
                         <div className="flex items-start gap-4 mb-4">
-                          <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-figma-500/20 to-coral-500/20 flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+                          <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-figma-500/25 to-coral-500/20 flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
                             <exp.icon className="w-6 h-6 text-figma-400" />
                           </div>
                           <div className="flex-1">

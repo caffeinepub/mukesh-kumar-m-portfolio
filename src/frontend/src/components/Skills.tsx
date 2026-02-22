@@ -84,7 +84,7 @@ const Skills = () => {
               >
                 <Card className="h-full glass-card group hover:-translate-y-2 transition-all duration-300">
                   <CardContent className="p-6 sm:p-8">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-figma-500/20 to-coral-500/20 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-figma-500/25 to-coral-500/20 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
                       <skill.icon className="w-6 h-6 text-figma-400 icon-pulse" />
                     </div>
                     <h3 className="text-xl font-bold mb-3 text-foreground group-hover:text-figma-400 transition-colors">

@@ -28,9 +28,9 @@ const ProjectCard = ({ project, index, isVisible }: { project: any; index: numbe
         transition: 'transform 0.1s ease-out',
       });
 
-      const figmaColor = 'rgba(168, 85, 247, 0.15)';
+      const spotlightColor = 'rgba(168, 85, 247, 0.18)';
       setSpotlightStyle({
-        background: `radial-gradient(circle 300px at ${x}px ${y}px, ${figmaColor}, transparent)`,
+        background: `radial-gradient(circle 300px at ${x}px ${y}px, ${spotlightColor}, transparent)`,
       });
     };
 
@@ -87,7 +87,7 @@ const ProjectCard = ({ project, index, isVisible }: { project: any; index: numbe
                 <Badge
                   key={tagIndex}
                   variant="secondary"
-                  className="bg-figma-500/10 text-figma-400 border border-figma-500/20 hover:bg-figma-500/20 hover:scale-110 transition-all duration-300"
+                  className="bg-figma-500/15 text-figma-400 border border-figma-500/30 hover:bg-figma-500/25 hover:scale-110 transition-all duration-300"
                 >
                   {tag}
                 </Badge>
@@ -95,9 +95,9 @@ const ProjectCard = ({ project, index, isVisible }: { project: any; index: numbe
             </div>
           </CardContent>
 
-          {/* Glow Effect */}
+          {/* Enhanced Glow Effect */}
           <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-            <div className="absolute inset-0 bg-gradient-to-br from-figma-500/20 to-coral-500/20 blur-xl" />
+            <div className="absolute inset-0 bg-gradient-to-br from-figma-500/25 to-coral-500/20 blur-xl" />
           </div>
         </Card>
       </div>
@@ -136,14 +136,14 @@ const Projects = () => {
       description:
         'Streamlined clinical workflows with persona-driven interfaces and a scalable design system.',
       tags: ['Dashboard Design', 'Healthcare UX', 'Data Visualization'],
-      gradient: 'from-figma-500/20 to-coral-500/20',
+      gradient: 'from-figma-500/25 to-coral-500/20',
     },
     {
       title: 'Tours and Travel Management System',
       description:
         'End-to-end travel platform with seamless booking, interactive itineraries, and a responsive engine.',
       tags: ['Booking Engine', 'Consumer App', 'Travel Tech'],
-      gradient: 'from-coral-500/20 to-tangerine-500/20',
+      gradient: 'from-coral-500/20 to-tangerine-500/18',
     },
   ];
 

@@ -2,19 +2,10 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-replace-the-current-teal-emerald-color-scheme-with-a-new-design-focused-color-palette-that-reflects-ui-ux-design-principles-and-creative-work-using-colors-appropriate-for-a-design-portfolio-avoid-generic-blue-purple-unless-contextually-relevant-to-design-tools",
-      "featureTitle": "Replace the current teal/emerald color scheme with a new design-focused color palette that reflects UI/UX design principles and creative work, using colors appropriate for a design portfolio (avoid generic blue/purple unless contextually relevant to design tools)",
+      "featureId": "feature-replace-all-instances-of-mukesh-example-com-with-mukeshhkumarr16-gmail-com-in-the-contact-component-frontend-src-components-contact-tsx-including-displayed-contact-information-and-any-form-placeholder-text",
+      "featureTitle": "Replace all instances of 'mukesh@example.com' with 'mukeshhkumarr16@gmail.com' in the Contact component (frontend/src/components/Contact.tsx), including displayed contact information and any form placeholder text",
       "files": [
-        "frontend/src/components/About.tsx",
-        "frontend/src/components/Contact.tsx",
-        "frontend/src/components/Experience.tsx",
-        "frontend/src/components/Hero.tsx",
-        "frontend/src/components/Projects.tsx",
-        "frontend/src/components/ScrollProgress.tsx",
-        "frontend/src/components/ScrollToTop.tsx",
-        "frontend/src/components/Skills.tsx",
-        "frontend/src/index.css",
-        "frontend/tailwind.config.js"
+        "frontend/src/components/Contact.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -24,44 +15,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-22"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-update-the-animatedbackground-component-with-a-new-background-design-that-aligns-with-the-design-focused-theme-replacing-the-current-grid-pattern-with-design-related-visual-elements-or-patterns",
-      "featureTitle": "Update the AnimatedBackground component with a new background design that aligns with the design-focused theme, replacing the current grid pattern with design-related visual elements or patterns",
-      "files": [
-        "frontend/src/components/AnimatedBackground.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-23"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-update-all-glassmorphism-card-effects-gradients-and-overlays-to-use-the-new-design-focused-color-palette-consistently-across-all-sections-hero-about-experience-projects-skills-contact",
-      "featureTitle": "Update all glassmorphism card effects, gradients, and overlays to use the new design-focused color palette consistently across all sections (Hero, About, Experience, Projects, Skills, Contact)",
-      "files": [
-        "frontend/src/components/Footer.tsx",
-        "frontend/src/components/Navbar.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-24"
+        "REQ-36"
       ],
       "confidence": "high"
     }

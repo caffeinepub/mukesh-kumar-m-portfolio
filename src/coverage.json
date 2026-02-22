@@ -1,77 +1,25 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-22T06:50:53.375Z",
+  "generatedAt": "2026-02-22T08:40:32.772Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
   },
   "requirements": {
-    "total": 4,
-    "implemented": 3,
+    "total": 1,
+    "implemented": 1,
     "items": [
       {
-        "id": "REQ-22",
-        "summary": "Replace the current teal/emerald color scheme with a new design-focused color palette that reflects UI/UX design principles and creative work, using colors appropriate for a design portfolio (avoid generic blue/purple unless contextually relevant to design tools)",
+        "id": "REQ-36",
+        "summary": "Replace all instances of 'mukesh@example.com' with 'mukeshhkumarr16@gmail.com' in the Contact component (frontend/src/components/Contact.tsx), including displayed contact information and any form placeholder text",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/tailwind.config.js",
-          "frontend/src/index.css",
-          "frontend/src/components/Hero.tsx",
-          "frontend/src/components/About.tsx",
-          "frontend/src/components/Experience.tsx",
-          "frontend/src/components/Projects.tsx",
-          "frontend/src/components/Skills.tsx",
-          "frontend/src/components/Contact.tsx",
-          "frontend/src/components/ScrollProgress.tsx",
-          "frontend/src/components/ScrollToTop.tsx"
+          "frontend/src/components/Contact.tsx"
         ],
         "matchedFiles": [
-          "frontend/tailwind.config.js",
-          "frontend/src/index.css",
-          "frontend/src/components/Hero.tsx",
-          "frontend/src/components/About.tsx",
-          "frontend/src/components/Experience.tsx",
-          "frontend/src/components/Projects.tsx",
-          "frontend/src/components/Skills.tsx",
-          "frontend/src/components/Contact.tsx",
-          "frontend/src/components/ScrollProgress.tsx",
-          "frontend/src/components/ScrollToTop.tsx"
+          "frontend/src/components/Contact.tsx"
         ]
-      },
-      {
-        "id": "REQ-23",
-        "summary": "Update the AnimatedBackground component with a new background design that aligns with the design-focused theme, replacing the current grid pattern with design-related visual elements or patterns",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/AnimatedBackground.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/AnimatedBackground.tsx"
-        ]
-      },
-      {
-        "id": "REQ-24",
-        "summary": "Update all glassmorphism card effects, gradients, and overlays to use the new design-focused color palette consistently across all sections (Hero, About, Experience, Projects, Skills, Contact)",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/Navbar.tsx",
-          "frontend/src/components/ParticleBackground.tsx",
-          "frontend/src/components/Footer.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/Navbar.tsx",
-          "frontend/src/components/Footer.tsx"
-        ]
-      },
-      {
-        "id": "REQ-25",
-        "summary": "Update the Tailwind CSS configuration and global CSS variables in frontend/index.css and frontend/src/index.css to define and apply the new design-focused color scheme using OKLCH color space",
-        "status": "missing",
-        "plannedFiles": [
-          "frontend/index.css"
-        ],
-        "matchedFiles": []
       }
     ]
   },
@@ -80,19 +28,7 @@
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/src/components/About.tsx",
-    "frontend/src/components/AnimatedBackground.tsx",
     "frontend/src/components/Contact.tsx",
-    "frontend/src/components/Experience.tsx",
-    "frontend/src/components/Footer.tsx",
-    "frontend/src/components/Hero.tsx",
-    "frontend/src/components/Navbar.tsx",
-    "frontend/src/components/Projects.tsx",
-    "frontend/src/components/ScrollProgress.tsx",
-    "frontend/src/components/ScrollToTop.tsx",
-    "frontend/src/components/Skills.tsx",
-    "frontend/src/index.css",
-    "frontend/tailwind.config.js",
     "project_state.json",
     "scratch/component-selection.json",
     "spec.md",
